@@ -1,13 +1,12 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Welcome from '../routes/welcome/Welcome'
 
 function Nav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
-                <Link to="/" className="navbar-brand">Bebop Bank ATM</Link>
+                <Link to="/" className="navbar-brand">MentalONE</Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -16,9 +15,10 @@ function Nav() {
                     <ul className="navbar-nav">
                         <li className="nav-item">
                             <Link to="/" className="nav-link">Welcome</Link>
+                        </li>
+                        <li>
                             <Link to="/login" className="nav-link">Login</Link>
                         </li>
-                        +
                     </ul>
                 </div>
             </div>

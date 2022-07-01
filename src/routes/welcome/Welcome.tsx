@@ -3,7 +3,7 @@ import React from 'react'
 function Welcome() {
   return (
     <div>
-            <img src="C:\Users\clari\Documents\P3\expert-fe\logo_transparent.png"></img>
+            <a href="https://imgur.com/bY1Rrs8"><img src="https://i.imgur.com/bY1Rrs8.png" title="source: imgur.com" /></a>
     </div>
   )
 }
