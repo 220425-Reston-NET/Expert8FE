@@ -1,29 +1,26 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Nav from './Components/NavBar';
-import Home from './Routes/home/home';
-import Welcome from './Routes/welcome/welcome';
 
 function App() {
   return (
-    // const {isAuthenticated} = useAuth0();
-  
- <>
- <Nav />
- <Routes>
-   <Route path='/appointments' element={<Home/>}/>
-   <Route path='/' element={<Home/>}/>
-   <Route path='/welcome' element={<Home/>}/>
-   <Route path='/register' element={<Home/>}/>
-   <Route path='/searchgroomers' element={<Home/>}/>
-   <Route path='/services' element={<Home/>}/>
-   <Route path='/confrimed' element={<Home/>}/>
-
- </Routes>
-    </>
-
-    );
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
