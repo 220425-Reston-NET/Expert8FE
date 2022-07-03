@@ -1,0 +1,37 @@
+.column-layout{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+
+.text-container{
+    font-family:  'Lucida Sans';
+    font-style: italic;
+    font-size: 20px;
+    color: rgb(20, 248, 248);
+}
+
+.img-container{
+    flex: 3;
+    order:2;
+    text-align: center;
+}
+
+.right-side-container{
+    flex: 1;
+    order:3;
+    text-align: right;
+}
+
+.left-side-container{
+    flex:1;
+    order:1;
+}
+
+.bottom-container{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}

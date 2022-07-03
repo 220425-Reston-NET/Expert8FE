@@ -1,0 +1,38 @@
+.login-container{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+}
+
+.form-container{
+    flex:1;
+    padding: 40px;
+    max-width: 600px;
+    background-color: white;
+}
+
+.button-container{
+  background-color: cyan;
+  color: white;
+  border-color: rgb(4, 189, 189);
+}
+
+.label-container{
+    padding: 10px;
+    color: cyan;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.welcome-container{
+    padding: 10px;
+    color: cyan;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 55px; 
+    text-align: center;
+}
