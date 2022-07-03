@@ -2,6 +2,12 @@ import React from 'react'
 import './Login.css'
 
 function Login() {
+
+    const navigate = useNavigate();
+    const goToCreateAccount = () => {
+        navigate('/create-account');
+    };
+
     return (
         <div className='login-container'>
             <form className='form-container'>
@@ -18,7 +24,7 @@ function Login() {
                 </div>
                 <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Submit</button></div>
                 <div style={{textAlign: 'center'}}><button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} type="submit" className="btn btn-light btn-lg">Forgot Password?</button></div>
-                <div style={{textAlign: 'center'}}><button style={{marginTop: 20}} type="submit" className="btn button-container btn-lg">Dont have an account? Sign Up!</button></div>
+                <div style={{textAlign: 'center'}}><button onClick={goToCreateAccount} style={{marginTop: 20}} type="submit" className="btn button-container btn-lg">Dont have an account? Sign Up!</button></div>
             </form>
             </div>
     )
