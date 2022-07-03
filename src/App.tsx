@@ -14,11 +14,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Welcome/>}/>
       <Route path='/login' element={<Login/>}/>
-<<<<<<< HEAD
       <Route path='/create-account' element={<CreateAccount/>}/>
-=======
-      <Route path='/createaccount' element={<CreateAccount/>}/>
->>>>>>> 4e008dbe6b4f7d641811316b4a53c4d8249057fd
     </Routes>
     </>
   );
