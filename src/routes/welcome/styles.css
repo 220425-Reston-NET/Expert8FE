@@ -1,0 +1,584 @@
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+/* this is the scroll up button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#2C6481; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/*end of the scroll up button*/
+/* this is the webkit scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#0D243C;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#3897b9;
+    border-radius:10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+/*end of the webkit scroll bar css*/
+
+/* this is the general syntax */
+body{
+    background-color:#0D243C;
+    margin:0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1140px;
+    margin: 0 auto;
+    padding:1rem 1rem;
+}
+a{/* this is the a css for the header*/
+    text-decoration: none;
+    color:#B7CCE1;
+    font-family: TT Commons;
+    cursor:pointer;
+}
+header a{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+a:hover{
+    color:white;
+}/* end of the a css for the header*/
+h1{
+    font-family: TT Commons;
+    font-weight:bold;
+    color:white;
+    font-size:max(5vw, 3rem);
+    margin:0;
+    line-height: 1rem;
+}
+h2{
+    font-family: TT Commons;
+    font-weight:bold;
+    color:white;
+    font-size:2rem;
+}
+h3{
+    font-family: TT Commons;
+    font-weight:bold;
+    color:white;
+    font-size:2rem; 
+    text-decoration: underline;
+}
+p{
+    font-family: TT Commons;
+    color:white;
+    font-size:1.25rem;
+}
+/* end of the general syntax*/
+
+/* this is the start of the hero css*/
+/* dashboard buttoncss*/
+.Dashboardbutton{
+    border-radius: 3rem;
+    border: 2px white solid;
+    background:transparent;
+    color:white;
+    padding: 0.5rem 3rem;
+    cursor:pointer;
+    margin-right:1rem;
+}
+.Dashboardbutton:hover{
+    color:#0D243C;
+    background:white;
+    transition:0.5s;
+}
+/*end of dashboard css*/
+
+/* hero div class css*/
+.headerLogo{
+    animation:floaty 2s infinite alternate;
+}
+
+/* this is the white button css*/
+.whiteButton{
+    border-radius:3rem;
+    color:white;
+    background-color:transparent;
+    border: 2px solid white;
+    padding: max(1%,1rem) max(4%,2rem);
+    cursor:pointer;
+    margin:1rem;
+    font-family: TT Commons;
+    font-size:1.25rem;
+}
+.whiteButton:hover{
+    background-color:white;
+    color:#0D243C;
+    transition:0.5s;
+}
+/* this is the end of the white button css*/
+.highLight{
+    color:#40CCFF;
+    font-size:max(7vw,3rem);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    font-family: TT Commons;
+    font-weight:bold;
+}
+
+.heroText{
+    max-width:35rem;
+    margin:0 auto;
+}
+/*end of hero div class css*/
+/*end of the hero css*/
+
+/* content css*/
+.content{
+    max-width:1140px;
+    margin:0 auto;
+}
+.ToScontent{
+    max-width:1140px;
+    margin-top: 30px;
+    text-align: center;
+    padding:5% 2rem;
+}
+
+.ToScontent h3{
+	color:#40CCFF;
+	font-family:TT Commons Black, Arial, sans-serif;
+	font-size: max(3vw, 2.75rem);
+}
+.ToScontent h1{
+    line-height: normal;
+}
+.termSub{
+    text-align: left;
+    margin: 10% auto;
+}
+
+
+.headToS{
+    margin-bottom:4rem;
+}
+.textBody{
+    padding-top:20%;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    margin:0 auto;
+    flex-wrap: wrap-reverse;
+}
+.blueBar{
+    background-color:#40CCFF;
+    max-width:4rem;
+    min-height:0.5rem;
+}
+.section1{
+    display: inline-block;
+    text-align:left;
+    padding:2rem;
+    max-width:25rem;
+}
+.sideImage1{
+    max-width:50%;
+    min-width:20rem;
+    height:auto;
+    margin:0 auto;
+}
+.diamondCards{
+    height:auto;
+    width:80%;
+    margin:0 auto;
+    padding:2rem;
+    display:block;
+}
+.miniContainer{
+    text-align: center;
+    padding: 0 2rem;
+    margin-top: 20%;
+    margin-bottom:10%;
+}
+.miniContainer .blueBar{
+    margin: 0 auto;
+}
+.whiteCard{
+    background-color:#163352;
+    border-radius: 20rem;
+    margin: 2rem 0;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.contactSection{
+    text-align: center;
+    margin-top:20%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:3rem;
+}
+.thinBlue{
+    width:10%;
+    height:0.15rem;
+    border-radius: 50px;
+    background-color:#3897b9;
+    margin:0 2rem;
+}
+.headToS{
+    display:block;
+}
+.ToSoverlay{
+    height: 100%;
+	width: 0;
+	position:fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+    background-color: rgb(32,42,68);
+    background-color:rgba(32,42,68,0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+.sideImage2{
+    width:50%;
+    max-width: 20rem;
+    height:auto;
+    min-width: 15rem;
+    padding:1rem;
+    border-radius: 1.25rem;
+}
+.sideImage3{
+    width:20%;
+    max-width: 20rem;
+    height:auto;
+    min-width: 15rem;
+    padding:1rem 1rem 1rem 1rem;
+    border-radius: 1.25rem;
+}
+.sideImage4{
+    width:20%;
+    max-width: 20rem;
+    height:auto;
+    min-width: 15rem;
+    padding:1rem;
+    border-radius: 1.25rem;
+}
+.whiteCardText{
+    max-width:50%;
+    display: inline-block;
+    text-align: left;
+    padding: 2rem 1rem;
+}
+.whiteCardText p{
+    color:whitesmoke;
+}
+.whiteCardText h2{
+    color:white;
+    text-decoration: underline;
+}
+.cardImage{
+    margin:0.5rem;
+}
+.blueButton{
+    background-color:white;
+    color:#163352;
+    border-radius: 50px;
+    padding:1rem;
+    cursor:pointer;
+    border:2px solid #163352;
+    transition:0.5s;
+}
+.blueButton:hover{
+    background-color:#163352;
+    color:white;
+    border-radius: 50px;
+    padding:1rem 2rem;
+    cursor:pointer;
+    border:2px solid white;
+}
+/* this is the slider css*/
+.flickity-prev-next-button {
+    display:none;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    }
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+.flickity-page-dots .dot.is-selected {
+    background: white;
+}
+/*end of the slider css*/
+/*accordion css*/
+.accordion {
+    background-color:#091d33;
+    color: white;
+    cursor:pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid 2px #091d33;
+    border-radius: 20px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    font-family: TT Commons;
+    font-weight:bold;
+  }
+.active4, .accordion:hover {
+    border: solid 2px white;
+}
+  
+.accordion:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+} 
+.active4:after {
+    content: "\2212";
+}
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: inline-block;
+    text-align: left;
+  }
+  .space{
+    height:2rem;
+    width:10rem;
+  }
+/*end of the accordion css*/
+/*this is the start of the follow us css*/
+
+/*end of the follow us css*/
+/* content css end*/
+
+/*this is the start of the footer area css*/
+.footerLogo{
+    max-width:20rem;
+    min-width:15rem;
+}
+footer p{
+    max-width:20rem;
+    min-width:15rem;
+}
+footer{
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color:#03101E;
+    flex-wrap:wrap;
+}
+.gradientBlock{
+    width:100%;
+    height:5rem;
+    background-image:linear-gradient(360deg,#03101E,#0D243C);
+    margin-top:10%;
+}
+/*end of the footer area css*/
+.followusContainer{
+    margin: 2rem 0;
+    display:flex;
+    flex-wrap:wrap;
+}
+.cardLogoIcons{
+    background-color:white;
+    padding: 3rem;
+    border-radius: 100px;
+    margin:0 auto;
+    border: 2px solid white;
+    transition:0.5s;
+    cursor:pointer;
+}
+.cardLogoIcons:hover{
+    background-color:#0D243C;
+    color:white;
+}
+/* this is the mobile menu css*/
+.hammenu{
+    display:none;
+}
+.closeButton{
+    display:none;
+}
+.closeButtonToS{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    font-size: 60px; 
+    cursor:pointer;
+    display:block;
+}
+.ToSoverlay::-webkit-scrollbar{
+    display:none;
+}
+.ToSoverlay {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.cardContainer{
+    display:none;
+    padding-top:2rem;
+}
+.TosExit{
+    padding:1rem 2rem;
+    cursor:pointer;
+    
+}
+/*end of the mobile menu css*/
+
+/* this is the reveal css*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}  
+.reveal2{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal2.active2{
+    transform: translateX(0);
+    opacity: 1;
+}  
+.reveal3{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+.reveal3.active3{
+    transform: translateX(0);
+    opacity: 1;
+}  
+/*end of reveal css*/
+
+/* this si the css animations*/
+@keyframes floaty{
+	0%{
+		transform: translateY(0);
+	}
+	100%{
+		transform: translateY(15px);
+	}
+}
+/* end of the css animations*/
+
+/* this is the start of the media queries*/
+@media only screen and (max-width: 911px) {
+    .whiteCard{
+        border-radius: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cardContainer{
+        display:block;
+    }
+    .diamondCards{
+        display:none;
+    }
+    .hammenu{
+        display: block;
+        cursor:pointer;
+        max-width: 2rem;
+    }
+    .closeButton{
+        display:block;
+        max-width: 2rem;
+        cursor: pointer;
+    }
+    nav .menu{
+        height: 100%;
+        width: 0;
+        position:fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(32,42,68);
+        background-color:rgba(32,42,68,0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        text-align:center;
+    }
+    nav ::-webkit-scrollbar{
+        display:none;
+    }
+    nav {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+    .menu a{
+        padding: 8px;
+        text-decoration: none;
+        color:white;
+        display: block;
+        position: relative;
+        top: 15%; /* 25% from the top */
+        width: 100%; /* 100% width */
+        text-align: center; /* Centered text/links */
+        margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+        font-size: 2rem;
+        margin-left: 0;
+        margin-right:0;
+    }
+    .menu a:hover{
+        color: #2C6481;
+        font-weight: bold;
+    }
+    .menu .closeButton{
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        font-size: 60px;
+    }
+    .Dashboardbutton{
+        border-radius: 3rem;
+        border: 2px white solid;
+        background:transparent;
+        color:white;
+        padding: 0.5rem 3rem;
+        cursor:pointer;
+        font-size: 1.5rem;
+    }
+    }
+/* end of the media query*/
