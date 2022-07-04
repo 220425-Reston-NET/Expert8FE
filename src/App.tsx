@@ -6,6 +6,7 @@ import Nav from './shared/Nav';
 import Welcome from './routes/welcome/Welcome';
 import Login from './routes/login/Login';
 import CreateAccount from './routes/create-account/CreateAccount';
+import Afterlogin from './routes/after-login/Afterlogin';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Welcome/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/create-account' element={<CreateAccount/>}/>
+      <Route path='/afterlogin' element={<Afterlogin/>}/>
     </Routes>
     </>
   );
