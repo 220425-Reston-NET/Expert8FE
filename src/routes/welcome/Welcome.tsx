@@ -71,7 +71,7 @@ function Welcome() {
                 <h2>Who are Mental One?</h2>
                 <div className="blueBar"></div>
                 <p>We are a mental health institution that our purpose is to help individuals with their mental health. Mental health has become one of the major health issues in society. However, there are very limited access and services to cater to the needs of the public. We aims to develop serices where patients can access resources and services for mental health.</p>
-                <button className="blueButton">Schedule an appointment</button>
+                <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} type="submit" className="btn btn-light btn-lg">Schedule an Appointment</button>
             </div>
             <img src="https://i.imgur.com/bY1Rrs8.png" className="sideImage1 reveal3"/>
         </div>
