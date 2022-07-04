@@ -11,7 +11,7 @@ function Welcome() {
                     <p className='text-container'>We are here for you.<br />We see you.<br />We can help you.</p>
                 </div>
                 <div className="img-container">
-                    <a href="https://imgur.com/nMiKjga"><img src="https://i.imgur.com/nMiKjga.png" title="source: imgur.com" /></a>
+                <a href="https://imgur.com/wxSaEhG"><img src="https://i.imgur.com/wxSaEhG.png" title="source: imgur.com" /></a>
                 </div>
                 <div className='right-side-container'>
                 </div>
