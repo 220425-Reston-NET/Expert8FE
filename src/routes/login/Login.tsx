@@ -24,8 +24,8 @@ function Login() {
     const goToCreateAccount = () => {
         navigate('/create-account');
     };
-    const goToafterlogin = () => {
-        navigate('/afterlogin');
+    const goToDashboard = () => {
+        navigate('/dashboard');
     };
 
     async function onSubmit(e: any) {
@@ -45,7 +45,7 @@ function Login() {
 
           console.log(response);
 
-          goToafterlogin();
+          goToDashboard();
   
           setfailed((prev) => false);
         }), () => {
