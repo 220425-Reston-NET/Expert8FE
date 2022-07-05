@@ -106,7 +106,7 @@ function Welcome() {
       }
       const test3 = () =>
       {
-        window.scrollTo(0,3780)
+        window.scrollTo(0,4005)
       }
       
       
@@ -138,7 +138,7 @@ function Welcome() {
             <div className="section1 reveal2" id="about">
                 <h2>Who are Mental One?</h2>
                 <div className="blueBar"></div>
-                <p>We are a mental health institution that our purpose is to help individuals with their mental health. Mental health has become one of the major health issues in society. However, there are very limited access and services to cater to the needs of the public. We aims to develop serices where patients can access resources and services for mental health.</p>
+                <p>We are a mental health institution that our purpose is to help individuals with their mental health. Mental health has become one of the major health issues in society. However, there are very limited access and services to cater to the needs of the public. We aims to develop services where patients can access resources and services for mental health.</p>
                 <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} type="submit" onClick={gotologin} className="btn btn-light btn-lg">Schedule an Appointment</button>
             </div>
             <img src="https://i.imgur.com/bY1Rrs8.png" className="sideImage1 reveal3"/>
@@ -163,7 +163,17 @@ function Welcome() {
             <div className="whiteCard">
                 <div className="whiteCardText">
                     <h2>Anxiety</h2>
-                    <p>Glitched is a bot that automates freebies checkouts and monitors price errors and deals. This bot is aimed to help resellers increase their profits even further while in Profit Lounge.</p>
+                    <p>Anxiety is not always related to an underlying condition. It may be caused by:
+
+<p>-Stress that can result from work, school, personal relationship
+<p>-Emotional trauma
+<p>-Financial concerns
+<p>-Stress caused by a chronic or serious medical condition
+<p>-A major event or performance
+<p>-Side effect of certain medications
+<p>-Alcohol consumption, drugs such as cocaine
+<p>-Lack of oxygen
+<p>Click More Information to ""</p></p></p></p></p></p></p></p></p></p>
                     <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} className="btn btn-light btn-lg">More Information on Anxiety</button>
                 </div>
             </div>
@@ -171,7 +181,7 @@ function Welcome() {
             <div className="whiteCard">
                 <div className="whiteCardText">
                     <h2>Depression</h2>
-                    <p>Glitched is a bot that automates freebies checkouts and monitors price errors and deals. This bot is aimed to help resellers increase their profits even further while in Profit Lounge.</p>
+                    <p>Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest. Also called major depressive disorder or clinical depression, it affects how you feel, think and behave and can lead to a variety of emotional and physical problems. You may have trouble doing normal day-to-day activities, and sometimes you may feel as if life isn't worth living.</p>
                     <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} className="btn btn-light btn-lg">More Information on Depression</button>
                 </div>
             </div>
@@ -179,7 +189,7 @@ function Welcome() {
             <div className="whiteCard">
                 <div className="whiteCardText">
                     <h2>Relationship Counseling</h2>
-                    <p>Glitched is a bot that automates freebies checkouts and monitors price errors and deals. This bot is aimed to help resellers increase their profits even further while in Profit Lounge.</p>
+                    <p>professional guidance of the individual by utilizing psychological methods especially in collecting case history data, using various techniques of the personal interview, and testing interests and aptitudes</p>
                     <button style={{color: 'rgb(4, 189, 189)', borderColor: 'rgb(4, 189, 189)'}} className="btn btn-light btn-lg">More Information on Relationship Counseling</button>
                 </div>
             </div>

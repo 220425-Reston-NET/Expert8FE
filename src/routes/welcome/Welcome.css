@@ -81,7 +81,7 @@
     opacity: 1;
 }  
 .reveal2v2.active2{
-  transform: translateX(800px);
+  transform: translateX(-540px);
   opacity: 1;
 }
 .sideImage1{
@@ -107,7 +107,7 @@
     opacity: 1;
 }  
 .reveal3v2.active3{
-  transform: translateX(-540px);
+  transform: translateX(810px);
   
   opacity: 1;
 }  
