@@ -7,17 +7,17 @@
 
 .servone-container{
     text-align: center;
-    order: 3;
+    order: 1;
 }
 
 .servtwo-container{
     text-align: center;
-    order: 1;
+    order: 2;
 }
 
 .servthree-conatiner{
     text-align: right;
-    order: 2;
+    order: 3;
 }
 
 .btn-container{

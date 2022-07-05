@@ -7,7 +7,7 @@
 
 
 .text-container{
-    font-family:  'Lucida Sans';
+    font-family: 'Lucida Sans';
     font-style: italic;
     font-size: 20px;
     color: rgb(20, 248, 248);
@@ -28,6 +28,9 @@
 .left-side-container{
     flex:1;
     order:1;
+    font-weight: bold;
+    font-size: 60px;
+    color: black;
 }
 
 .bottom-container{
@@ -35,6 +38,9 @@
     display: flex;
     justify-content: space-between;
 }
+/* ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+
 .reveal2{
     position: relative;
     transform: translateX(-150px);
