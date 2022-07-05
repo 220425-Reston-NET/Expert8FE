@@ -1,5 +1,6 @@
 .login-container{
     display: flex;
+    align-items: stretch;
     justify-content: center;
     background-image: url('https://i.imgur.com/zzX0P7b.png');
 }

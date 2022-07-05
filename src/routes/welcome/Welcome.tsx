@@ -49,7 +49,7 @@ function Welcome() {
         <div>
             <div className='column-layout'>
                 <div className='left-side-container'>
-                    <h1 style={{ fontWeight: 'bold', fontSize: 55 }}>Welcome</h1>
+                   Welcome
                     <p className='text-container'>We are here for you.<br />We see you.<br />We can help you.</p>
                 </div>
                 <div className="img-container">
