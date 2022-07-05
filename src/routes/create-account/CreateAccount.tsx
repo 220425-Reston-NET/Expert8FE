@@ -119,39 +119,39 @@ async function onSubmit(e: any) {
                     <div className="name-container">
                       <div className="name">
                       <label htmlFor="" className="form-label label-container">First Name</label>
-                      <input type="name" className="form-control" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+                      <input type="name" className="form-control" placeholder="John" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
                       </div>
                       <div className="name">
                       <label htmlFor="" className="form-label label-container">Last Name</label>
-                      <input type="name" className="form-control" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+                      <input type="name" className="form-control" placeholder="Doe" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
                       </div>
                     </div>
 
                     <label htmlFor="" className="form-label label-container">Email address</label>
-                    <input type="text" className="form-control"  /* onChange={}  */ aria-describedby=""/>
+                    <input type="" className="form-control" placeholder="johndoe@gmail.com" id="" /* onChange={}  */ aria-describedby=""/>
 
                     <label htmlFor="" className="form-label label-container">Phone Number</label>
-                    <input type="number" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+                    <input type="" className="form-control" placeholder="5555551234" id="" /* onChange={}  */ aria-describedby=""/>
 
                     <div className="address-container-a">
                       <div className="street-city">
                       <label htmlFor="" className="form-label label-container">Street Address</label>
-                      <input type="address" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+                      <input type="address" className="form-control" placeholder="123 Main St" id="" /* onChange={}  */ aria-describedby=""/>
                       </div>
                       <div className="street-city">
                       <label htmlFor="" className="form-label label-container">City</label>
-                      <input type="address" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+                      <input type="address" className="form-control" placeholder="Louisville" id="" /* onChange={}  */ aria-describedby=""/>
                       </div>
                     </div>
 
                     <div className="address-container-b">
                       <div className="state-zip">
                       <label htmlFor="" className="form-label label-container">State</label>
-                      <input type="address" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+                      <input type="" className="form-control" placeholder="Kentucky" id="" /* onChange={}  */ aria-describedby=""/>
                       </div>
                       <div className="state-zip">
                       <label htmlFor="" className="form-label label-container">Zipcode</label>
-                      <input type="number" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+                      <input type="" className="form-control" placeholder="55555" id="" /* onChange={}  */ aria-describedby=""/>
                       </div>
                     </div>
 
