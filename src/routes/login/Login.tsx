@@ -65,7 +65,11 @@ function Login() {
     return (
         <div className='login-container'>
             <form className='form-container' onSubmit={onSubmit}>
-            <h1 className='welcome-container'>Welcome</h1>
+            <h1  className='welcome-container'>Welcome</h1>
+            <div className="blueBar"></div>
+            <br></br>
+            <br></br>
+            <br></br>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label label-container">Email address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" onChange={Getuseremail} aria-describedby="emailHelp"/>
