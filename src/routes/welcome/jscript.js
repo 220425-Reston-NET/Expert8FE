@@ -52,19 +52,19 @@ function reveal3() {
   }
   window.addEventListener("scroll", reveal3);
 //this is the end of the reveal function//
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-	var myTopButton = document.getElementById("myBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    myTopButton.style.display = "block";
-  } else {
-    myTopButton.style.display = "none";
-  }
-}
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-// end of function for top button
+// function scrollFunction() {
+// 	var myTopButton = document.getElementById("myBtn");
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     myTopButton.style.display = "block";
+//   } else {
+//     myTopButton.style.display = "none";
+//   }
+// }
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0;
+// }
+// // end of function for top button

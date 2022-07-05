@@ -1,3 +1,4 @@
+import { Http2ServerResponse } from 'http2';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
@@ -39,15 +40,19 @@ function Login() {
         
       )
         .then((response) => response.json())
+          
           .then((response => {
           // change/ attached user to user id in db
           
-
-          console.log(response);
-
-          goToDashboard();
-  
-          setfailed((prev) => false);
+           
+              setfailed((prev) => false);
+              console.log(response);
+              
+              
+              goToDashboard();
+    
+            
+          
         }), () => {
 
             setfailed((prev) => true);
