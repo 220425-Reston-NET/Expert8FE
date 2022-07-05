@@ -1,0 +1,33 @@
+.services-container{
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.servone-container{
+    text-align: center;
+    order: 3;
+}
+
+.servtwo-container{
+    text-align: center;
+    order: 1;
+}
+
+.servthree-conatiner{
+    text-align: right;
+    order: 2;
+}
+
+.btn-container{
+    background-color: cyan;
+    color: white;
+    border-color: rgb(4, 189, 189);
+}
+
+h1{
+    text-align: center;
+    color: cyan;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}

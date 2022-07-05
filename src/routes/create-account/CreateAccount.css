@@ -1,0 +1,37 @@
+/* Parent Container */
+.create-account-page-container{
+    display: flex;
+    justify-content: center;
+}
+
+.tell-us{
+    display:center;
+}
+/* Parent element to name*/
+.name-container{
+    flex:1;
+    display:flex;
+}   
+
+.name{
+    flex:1;
+    padding: 2px;
+}
+
+/* Parent element to street, city*/
+.address-container-a{
+    display:flex;
+}
+.street-city{
+    flex:1;
+    padding: 2px;   
+}
+
+/* Parent element to state, zip */
+.address-container-b{
+    display:flex;
+}
+.state-zip{
+    flex:1;
+    padding: 25px;
+}
