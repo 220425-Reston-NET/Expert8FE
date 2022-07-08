@@ -10,6 +10,7 @@ import Dashboard from './routes/dashboard/Dashboard';
 import Services from './routes/services/Services';
 import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
+import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='/create-account' element={<CreateAccount/>}/>
       <Route path='/dashboard/:userId' element={<Dashboard />}/>
       <Route path='/services' element={<Services/>}/>
+      <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
     </Routes>
     </>
   );

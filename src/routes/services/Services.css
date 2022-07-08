@@ -1,26 +1,23 @@
 .services-container{
-    padding: 10px;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .servone-container{
-    text-align: center;
     order: 1;
 }
 
 .servtwo-container{
-    text-align: center;
     order: 2;
 }
 
 .servthree-conatiner{
-    text-align: right;
     order: 3;
 }
 
 .btn-container{
+    margin-top: 20px;
     background-color: cyan;
     color: white;
     border-color: rgb(4, 189, 189);
