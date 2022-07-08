@@ -1,0 +1,27 @@
+.dashboard-layout{
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container{
+    flex: 3;
+    order:2;
+    text-align: center;
+}
+
+.buttons-container{
+    padding: 40px;
+    order:1;
+    justify-content: space-between;
+}
+
+.header-container{
+    text-align: center;
+    color: rgb(243, 14, 140);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 70px;
+}

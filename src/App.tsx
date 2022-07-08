@@ -1,29 +1,34 @@
 import React from 'react';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import Nav from './Components/NavBar';
-import Home from './Routes/home/home';
-import Welcome from './Routes/welcome/welcome';
+import logo from './logo.svg';
+// import './App.css';
+import{ Routes, Route} from 'react-router-dom';
+import Nav from './shared/Nav';
+import Welcome from './routes/welcome/Welcome';
+import Login from './routes/login/Login';
+import CreateAccount from './routes/create-account/CreateAccount';
+import Dashboard from './routes/dashboard/Dashboard';
+import Services from './routes/services/Services';
+import { Patient } from './models/Patient';
+import { useSelector } from 'react-redux';
+import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
 
 function App() {
-  return (
-    // const {isAuthenticated} = useAuth0();
+
   
- <>
- <Nav />
- <Routes>
-   <Route path='/appointments' element={<Home/>}/>
-   <Route path='/' element={<Home/>}/>
-   <Route path='/welcome' element={<Home/>}/>
-   <Route path='/register' element={<Home/>}/>
-   <Route path='/searchgroomers' element={<Home/>}/>
-   <Route path='/services' element={<Home/>}/>
-   <Route path='/confrimed' element={<Home/>}/>
 
- </Routes>
+  return (
+    <>
+    <Nav/>
+    <Routes>
+      <Route path='/' element={<Welcome/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/create-account' element={<CreateAccount/>}/>
+      <Route path='/dashboard/:userId' element={<Dashboard />}/>
+      <Route path='/services' element={<Services/>}/>
+      <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
+    </Routes>
     </>
-
-    );
+  );
 }
 
 export default App;

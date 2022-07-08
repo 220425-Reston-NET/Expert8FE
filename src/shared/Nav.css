@@ -1,0 +1,28 @@
+.nav-container{
+    display: flex;
+}
+
+.flex-container{
+    flex: 2;
+    order: 1;
+    margin-left: 20px;
+}
+
+.search-container{
+    flex: 1;
+    order: 2;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.drop-container{
+    order:3;
+    flex:1;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+.dropdown-container{
+    display: inline;
+}
