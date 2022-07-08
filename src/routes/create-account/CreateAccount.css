@@ -6,6 +6,7 @@
 
 .tell-us{
     display:center;
+    margin-bottom: 90px;
 }
 /* Parent element to name*/
 .name-container{
@@ -35,3 +36,8 @@
     flex:1;
     padding: 25px;
 }
+.success{
+    flex:1;
+    padding: 2px;   
+}
+

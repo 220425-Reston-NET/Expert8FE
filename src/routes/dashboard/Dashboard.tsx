@@ -1,18 +1,37 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react'
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import './Dashboard.css'
+import { Patient } from '../../models/Patient';
 
-function Dashboard() {
+import CreateAccount from '../create-account/CreateAccount';
 
+
+
+function Dashboard(props : any) {
+
+  
   const navigate = useNavigate();
+
+  const [customer, setcustomer] = useState({} as Patient);
     
     const goToServices = () => {
         navigate('/services');
     };
 
+
+    const test = useParams();
+    const user = test.userId;
+
+    
+    
+    
+   
+
+  
+
   return (
       <div className='buttons-container'>
-        <h1 className='header-container'>Welcome</h1>
+        <h1 className='header-container'>Welcome { user }</h1>
     <div  className='dashboard-layout'>
                 <button type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
                 <button type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>

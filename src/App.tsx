@@ -8,8 +8,13 @@ import Login from './routes/login/Login';
 import CreateAccount from './routes/create-account/CreateAccount';
 import Dashboard from './routes/dashboard/Dashboard';
 import Services from './routes/services/Services';
+import { Patient } from './models/Patient';
+import { useSelector } from 'react-redux';
 
 function App() {
+
+  
+
   return (
     <>
     <Nav/>
@@ -17,7 +22,7 @@ function App() {
       <Route path='/' element={<Welcome/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/create-account' element={<CreateAccount/>}/>
-      <Route path='/dashboard' element={<Dashboard/>}/>
+      <Route path='/dashboard/:userId' element={<Dashboard />}/>
       <Route path='/services' element={<Services/>}/>
     </Routes>
     </>
