@@ -12,11 +12,11 @@ function Dashboard() {
 
   const userlist = useSelector((state : any) => state.counter.value)
 
-  // let testing1 = '';
+  let testing1 = '';
 
-  // let testing = userlist.map((test : any) => {
-  //     testing1 = test.services.serviceName
-  // })
+  function testing (test : any) {
+      testing1 = userlist.services.serviceName
+  }
 
   
   
