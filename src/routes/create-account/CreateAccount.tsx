@@ -3,11 +3,16 @@ import { useNavigate, Link } from "react-router-dom";
 import "./CreateAccount.css";
 import { Patient } from "../../models/Patient";
 import "../dashboard/Dashboard";
+import { useDispatch } from "react-redux";
+import { addUser } from "../../store/counter";
 
 function CreateAccount() {
+
+  const dispatch = useDispatch();
   const [customer, setcustomer] = useState({} as Patient);
   const [ishidden, sethidden] = useState(false);
   const [isfailed, setfailed] = useState(false);
+  // const { firsd } = useSelector((state) => state.counter);
 
   function insertFirstName(e: any) {
     customer.firstName = e.target.value;
@@ -103,6 +108,7 @@ function CreateAccount() {
 
           setcustomer(data);
           sethidden(true);
+          dispatch(addUser(data));
           console.log(data);
 
           gotologin();
@@ -120,7 +126,7 @@ function CreateAccount() {
     console.log("transfer works");
     navigate(`/dashboard/${customer.firstName}`, {
       state: {
-        firstName: "hello",
+        ...customer
       },
     });
   };

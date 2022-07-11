@@ -12,7 +12,7 @@ import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
 import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
 
-function App() {
+function App() : JSX.Element {
 
   
 
@@ -23,7 +23,7 @@ function App() {
       <Route path='/' element={<Welcome/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/create-account' element={<CreateAccount/>}/>
-      <Route path='/dashboard/:userId' element={<Dashboard />}/>
+      <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
     </Routes>

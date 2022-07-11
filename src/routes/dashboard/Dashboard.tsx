@@ -4,21 +4,32 @@ import './Dashboard.css'
 import { Patient } from '../../models/Patient';
 
 import CreateAccount from '../create-account/CreateAccount';
+import { useSelector } from 'react-redux';
 
 
 
-function Dashboard(props : any) {
+function Dashboard() {
+
+  const userlist = useSelector((state : any) => state.counter.value)
+
+  // let testing1 = '';
+
+  // let testing = userlist.map((test : any) => {
+  //     testing1 = test.services.serviceName
+  // })
 
   
+  
+
   const navigate = useNavigate();
 
-  const [customer, setcustomer] = useState({} as Patient);
+  
     
     const goToServices = () => {
         navigate('/services');
     };
 
-
+    
     const test = useParams();
     const user = test.userId;
 
@@ -31,11 +42,11 @@ function Dashboard(props : any) {
 
   return (
       <div className='buttons-container'>
-        <h1 className='header-container'>Welcome { user }</h1>
+        <h1 className='header-container'>Welcome { userlist.firstName }</h1>
     <div  className='dashboard-layout'>
-                <button type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
-                <button type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>
-                <button type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Your Profile</button>
+                <button onClick={goToServices} type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
+                <button onClick={goToServices}type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>
+                <button onClick={goToServices}type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Your Profile</button>
                 <button onClick={goToServices} type="button" className="btn btn-outline-info btn-lg" style={{margin: 'auto'}}>Schedule Appointment</button>
             </div>
       <div className='image-container'>
