@@ -8,6 +8,7 @@ import Login from './routes/login/Login';
 import CreateAccount from './routes/create-account/CreateAccount';
 import Dashboard from './routes/dashboard/Dashboard';
 import Services from './routes/services/Services';
+import YourProfile from './routes/your-profile/YourProfile';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/create-account' element={<CreateAccount/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='/services' element={<Services/>}/>
+      <Route path='/your-profile' element={<YourProfile/>}/>
     </Routes>
     </>
   );
