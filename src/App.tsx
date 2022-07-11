@@ -8,9 +8,7 @@ import Login from './routes/login/Login';
 import CreateAccount from './routes/create-account/CreateAccount';
 import Dashboard from './routes/dashboard/Dashboard';
 import Services from './routes/services/Services';
-<<<<<<< HEAD
 import YourProfile from './routes/your-profile/YourProfile';
-=======
 import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
 import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
@@ -18,7 +16,6 @@ import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
 function App() : JSX.Element {
 
   
->>>>>>> c02641ee10e1813dd04bc173c1a6bd9319e2b17c
 
   return (
     <>
@@ -29,11 +26,8 @@ function App() : JSX.Element {
       <Route path='/create-account' element={<CreateAccount/>}/>
       <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/services' element={<Services/>}/>
-<<<<<<< HEAD
       <Route path='/your-profile' element={<YourProfile/>}/>
-=======
       <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
->>>>>>> c02641ee10e1813dd04bc173c1a6bd9319e2b17c
     </Routes>
     </>
   );

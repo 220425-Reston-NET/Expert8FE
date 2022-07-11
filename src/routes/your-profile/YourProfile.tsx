@@ -8,7 +8,7 @@ function YourProfile() {
 return (
     <div className="your-profile-page-container">
     <div className="your-profile-container">
-        <h1 className="headline-container"><b>Your Profile</b></h1>
+        <h1 className="header"><b>Your Profile</b></h1>
         <div className="name-container">
             <div className="name">
             <label htmlFor="" className="form-label label-container">First Name</label>
@@ -22,7 +22,7 @@ return (
 
         <div className="address-container">
             <div className="address">
-            <label htmlFor="" className="form-label label-container">Email dress</label>
+            <label htmlFor="" className="form-label label-container">Email Address</label>
             <input type="address" className="form-control" placeholder="John" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
             <div className="address">
