@@ -1,55 +1,76 @@
 import { Http2ServerResponse } from 'http2';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
+import {Patient} from '../../models/Patient'
+import { useDispatch } from 'react-redux';
+import { addUser } from '../../store/counter';
 
 function Login() {
 
+
+  const dispatch = useDispatch();
     const navigate = useNavigate();
+    
 
-    let useremail: any ='';
-    let userpassword : any ='';
-
+    const[validation, setvalidation] = useState({} as Patient)
     const [isfailed, setfailed] = useState(false);
 
     function Getuseremail(e: any) {
-        useremail = e.target.value;
-        console.log(useremail);
+        validation.email = e.target.value;
+        console.log(validation.email);
       }
     
       function Getuserpassword(e: any) {
-        userpassword = e.target.value;
-        console.log(userpassword);
+        validation.password = e.target.value;
+        console.log(validation.password);
       }
     
     const goToCreateAccount = () => {
         navigate('/create-account');
     };
-    const goToDashboard = () => {
-        navigate('/dashboard');
-    };
+    
 
     async function onSubmit(e: any) {
         e.preventDefault();
     await fetch(
         "http://expert8env-env.eba-q62pjcac.us-east-1.elasticbeanstalk.com/searchpatientbyemailandpassword?" +
           new URLSearchParams({
-            email: useremail,
-            password: userpassword
-          })
+            email: validation.email,
+            password: validation.password
+          }),
+    
         
       )
-        .then((response) => response.json())
+        .then(response => 
+          {
+            if (response.status == 200)
+            {
+              return response.json();
+            }
+            else
+            {
+              setfailed((prev) => true);
+
+              throw `error with status ${response.status}`
+            }
+          })
+            
           
-          .then((response => {
+          .then((data => {
           // change/ attached user to user id in db
           
            
               setfailed((prev) => false);
-              console.log(response);
+              console.log(data);
+              setvalidation(data);
+              dispatch(addUser(data));
               
-              
-              goToDashboard();
+              navigate('/dashboard', {
+                state: {
+                  ...data
+                },
+              });
     
             
           

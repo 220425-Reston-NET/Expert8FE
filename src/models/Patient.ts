@@ -1,4 +1,5 @@
 export interface Patient{
+    
     pid : number;
     firstName : string;
     lastName : string;
