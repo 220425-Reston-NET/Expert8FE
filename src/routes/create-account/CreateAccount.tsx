@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import './CreateAccount.css'
+
+function CreateAccount() {
+
+  
+=======
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "./CreateAccount.css";
@@ -130,6 +139,7 @@ function CreateAccount() {
       },
     });
   };
+>>>>>>> c02641ee10e1813dd04bc173c1a6bd9319e2b17c
 
   return (
     <div>
@@ -248,6 +258,16 @@ function CreateAccount() {
             </div>
           </div>
 
+<<<<<<< HEAD
+                    <label htmlFor="password" className="form-label label-container">Password</label>
+                    <input type="password" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+
+                    <label htmlFor="re-password" className="form-label label-container">Re-enter Password</label>
+                    <input type="password" className="form-control" id="" /* onChange={}  */ aria-describedby=""/>
+
+                    <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Submit</button></div>                                                                                                                            
+                </div>
+=======
           <div className="address-container-b">
             <div className="state-zip">
               <label htmlFor="" className="form-label label-container">
@@ -367,6 +387,7 @@ function CreateAccount() {
           </div>
         </form>
       </div>
+>>>>>>> c02641ee10e1813dd04bc173c1a6bd9319e2b17c
 
       {/* {
       ishidden &&
