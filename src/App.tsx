@@ -11,6 +11,7 @@ import Services from './routes/services/Services';
 import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
 import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
+import Chats from './routes/chats/Chats';
 
 function App() : JSX.Element {
 
@@ -26,6 +27,7 @@ function App() : JSX.Element {
       <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
+      <Route path='/chats' element={<Chats/>}/>
     </Routes>
     </>
   );
