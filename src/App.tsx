@@ -35,6 +35,7 @@ function App() : JSX.Element {
       <Route path='/chats' element={<Chats/>}/>
       <Route path='/payment-information' element={<PaymentInformation/>}/>
       <Route path='/payment-confirmed' element={<PaymentConfirmed/>}/>
+      <Route path='/your-appointments' element={<YourAppointments/>}/>
     </Routes>
     </>
   );
