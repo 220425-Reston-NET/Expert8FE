@@ -10,7 +10,9 @@ function YourProfile() {
 return (
     <div className="your-profile-page-container">
     <div className="your-profile-container">
-        <h1 className="headline-container"><b>Your Profile</b></h1>
+
+        <h1 className="header"><b>Your Profile</b></h1>
+        
         <div className="name-container">
             <div className="name" style={{marginRight: 180}}>
             <label htmlFor=""  className="form-label label-container">First Name</label>

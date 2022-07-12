@@ -137,10 +137,7 @@ function CreateAccount() {
       <div className="create-account-page-container">
         
         <form className="create-account-container" onSubmit={onSubmit}>
-          <h1 className="tell-us">
-            <b>Tell us about yourself</b>
-          </h1>
-
+          <h1 className="header"><b>Tell us about yourself</b></h1>
           <div className="name-container">
             <div className="name">
               <label htmlFor="" className="form-label label-container">
