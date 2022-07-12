@@ -94,7 +94,6 @@ function Login() {
             <h1  className='welcome-container'>Welcome</h1>
             <div className="blueBar"></div>
             <br></br>
-            <h1 className="header"><b>Your Appointments</b></h1>
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label label-container">Email Address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" onChange={Getuseremail} aria-describedby="emailHelp"/>
