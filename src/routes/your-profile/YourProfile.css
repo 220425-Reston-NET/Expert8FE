@@ -23,7 +23,7 @@
 .name-container{
     flex:1;
     display:flex;
-    padding: 20px;
+    padding: px;
 }   
 
 .name{
@@ -70,6 +70,11 @@
 .zip-phone{
     flex:1;
     padding: 2px;   
+}
+
+.phone-form{
+    width: 250px;
+    margin: auto;   
 }
 
 /* Parent Element of buttons */

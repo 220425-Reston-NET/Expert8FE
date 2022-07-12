@@ -176,7 +176,7 @@ function CreateAccount() {
           </div>
 
           <label htmlFor="" className="form-label label-container">
-            Email address
+            Email Address
           </label>
           <input
             type=""
@@ -317,7 +317,7 @@ function CreateAccount() {
             </div>
             <div className="state-zip">
               <label htmlFor="" className="form-label label-container">
-                Zipcode
+                Zip Code
               </label>
               <input
                 type="number"
@@ -350,7 +350,7 @@ function CreateAccount() {
             </span>
           )}
           <label htmlFor="password" className="form-label label-container">
-            Re Enter Password
+            Re-enter Password
           </label>
           <input
             type="password"

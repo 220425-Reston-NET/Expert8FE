@@ -97,7 +97,7 @@ function Login() {
             <br></br>
             <br></br>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label label-container">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label label-container">Email Address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" onChange={Getuseremail} aria-describedby="emailHelp"/>
                 </div>
                 <div className="mb-3">

@@ -12,7 +12,8 @@ return (
         <div className="payment-information-container">
 
         <h1 className="header"><b>Payment Information</b></h1>
-
+        <br></br>
+        <br></br>
         <div className="name-container billing-name-container">
             <div className="name">
             <label htmlFor="" className="form-label label-container">First Name</label>
@@ -24,14 +25,25 @@ return (
             </div>
         </div>   
 
-        <div className="address-zip-container">
-            <div className="address-zip">
-            <label htmlFor="" className="form-label label-container">Address</label>
+        <div className="address-city-container">
+            <div className="address-city">
+            <label htmlFor="" className="form-label label-container">Street Address</label>
             <input type="address" className="form-control address-form" placeholder="" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
-            <div className="address-zip">
-            <label htmlFor="" className="form-label label-container">Zip code</label>
-            <input type="name" className="form-control zip-form" placeholder="" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <div className="address-city">
+            <label htmlFor="" className="form-label label-container">City</label>
+            <input type="city" className="form-control city-form" placeholder="" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            </div>    
+        </div>
+
+        <div className="state-zip-container">
+            <div className="state-zip">
+            <label htmlFor="" className="form-label label-container">State</label>
+            <input type="state" className="form-control state-form" placeholder="" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            </div>
+            <div className="state-zip">
+            <label htmlFor="" className="form-label label-container">Zip Code</label>
+            <input type="zip" className="form-control zip-form" placeholder="" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>    
         </div>
 
@@ -46,6 +58,7 @@ return (
             </div>    
         </div>
 
+        <br></br>
         <div className="buttons-container">
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Pay with Paypal</button></div>     
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Confirm Payment</button></div>     
