@@ -1,0 +1,44 @@
+.chats-container{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column-container{
+    text-align: center;
+    font-size: 30px;
+    flex: 3;
+    order:2;
+}
+
+.nxt-col-container{
+    flex: 1;
+    order:3;
+}
+
+.final-col-container{
+    flex:1;
+    order:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.l-cont{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    flex:auto;
+    order: 1;
+    background-color: white;
+    border: 5px solid black;
+    height: 200px;
+}
+
+.l-cont-two{
+    margin-top: 20px;
+    flex:auto;
+    order:2;
+    background-color: white;
+    border: 5px solid black;
+}
