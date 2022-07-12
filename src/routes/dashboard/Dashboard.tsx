@@ -28,6 +28,9 @@ function Dashboard() {
     const goToServices = () => {
         navigate('/services');
     };
+    const goToProfile = () => {
+        navigate('/your-profile')
+    }
 
     
     const test = useParams();
@@ -46,7 +49,7 @@ function Dashboard() {
     <div  className='dashboard-layout'>
                 <button onClick={goToServices} type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
                 <button onClick={goToServices}type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>
-                <button onClick={goToServices}type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Your Profile</button>
+                <button onClick={goToProfile}type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Your Profile</button>
                 <button onClick={goToServices} type="button" className="btn btn-outline-info btn-lg" style={{margin: 'auto'}}>Schedule Appointment</button>
             </div>
       <div className='image-container'>
