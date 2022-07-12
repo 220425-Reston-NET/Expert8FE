@@ -1,0 +1,47 @@
+/* Parent Container */
+.payment-information-page-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Parent element to the the billing names */
+.billing-name-container{
+    
+}
+
+/* Parent element to address-zip*/
+.address-zip-container{
+    display: flex;
+    justify-content: center;
+}
+
+.address-zip{
+    flex:1;
+    padding: 2px;
+}
+
+.address-form{
+
+}
+
+.zip-form{
+    width: 150px;
+    margin: auto;    
+}
+
+/* Parent element to card-ccv*/
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-ccv{
+    flex:1;
+    padding: 2px;
+}
+
+.ccv-form{
+    width: 100px;
+    margin: auto;
+}

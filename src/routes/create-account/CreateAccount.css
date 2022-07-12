@@ -1,3 +1,9 @@
+/* Parent Container */
+.create-account-page-container{
+    display: flex;
+    justify-content: center;
+}
+
 /* Title Header */
 .header{
     padding: 10px;
@@ -11,16 +17,12 @@
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-/* Parent Container */
-.create-account-page-container{
-    display: flex;
-    justify-content: center;
-}
 
 .tell-us{
     display:center;
     margin-bottom: 90px;
 }
+
 /* Parent element to name*/
 .name-container{
     flex:1;
@@ -46,10 +48,12 @@
 .address-container-b{
     display:flex;
 }
+
 .state-zip{
     flex:1;
     padding: 25px;
 }
+
 .success{
     flex:1;
     padding: 2px;   

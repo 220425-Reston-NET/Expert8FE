@@ -40,14 +40,14 @@ return (
             </div>
             <div className="city-state">
             <label htmlFor="" className="form-label label-container">State</label>
-            <input type="name" className="form-control" placeholder="Doe" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <input type="name" className="form-control state-form" placeholder="Doe" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div> 
 
         <div className="zip-phone-container">
             <div className="zip-phone">
             <label htmlFor="" className="form-label label-container">Zip code</label>
-            <input type="name" className="form-control" placeholder="John" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <input type="name" className="form-control zip-form" placeholder="John" id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
             <div className="zip-phone">
             <label htmlFor="" className="form-label label-container">Phone  </label>

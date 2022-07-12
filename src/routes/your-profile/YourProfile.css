@@ -8,8 +8,10 @@
     font-size: 55px; 
     text-align: center;
     font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 800px;
 }
+
 
 /* Parent Container */
 .your-profile-page-container{
@@ -21,6 +23,7 @@
 .name-container{
     flex:1;
     display:flex;
+    padding: 20px;
 }   
 
 .name{
@@ -41,10 +44,16 @@
 .city-state-container{
     display:flex;
 }
+
 .city-state{
     flex:1;
     padding: 2px;   
 }   
+
+.state-form{
+    width: 150px;
+    margin: auto;    
+}
 
 /* Parent Element of zip-phone */
 .zip-phone-container{

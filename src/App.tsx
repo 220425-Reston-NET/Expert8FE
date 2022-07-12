@@ -9,9 +9,12 @@ import CreateAccount from './routes/create-account/CreateAccount';
 import Dashboard from './routes/dashboard/Dashboard';
 import Services from './routes/services/Services';
 import YourProfile from './routes/your-profile/YourProfile';
+import PaymentInformation from './routes/payment-information/PaymentInformation';
 import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
 import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
+import PaymentConfirmed from './routes/payment-confirmed/PaymentConfirmed';
+import YourAppointments from './routes/your-appointments/YourAppointments';
 
 function App() : JSX.Element {
 
@@ -28,6 +31,9 @@ function App() : JSX.Element {
       <Route path='/services' element={<Services/>}/>
       <Route path='/your-profile' element={<YourProfile/>}/>
       <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
+      <Route path='/payment-information' element={<PaymentInformation/>}/>
+      <Route path='/payment-confirmed' element={<PaymentConfirmed/>}/>
+      <Route path='/your-appointments' element={<YourAppointments/>}/>
     </Routes>
     </>
   );
