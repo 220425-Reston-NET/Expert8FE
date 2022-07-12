@@ -8,7 +8,9 @@ function YourProfile() {
 return (
     <div className="your-profile-page-container">
     <div className="your-profile-container">
+
         <h1 className="header"><b>Your Profile</b></h1>
+        
         <div className="name-container">
             <div className="name">
             <label htmlFor="" className="form-label label-container">First Name</label>

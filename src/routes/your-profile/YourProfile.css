@@ -17,11 +17,6 @@
     justify-content: center;
 }
 
-.headline-container{
-    display:center;
-}
-
-
 /* Parent element to name*/
 .name-container{
     flex:1;
@@ -51,6 +46,7 @@
     padding: 2px;   
 }   
 
+/* Parent Element of zip-phone */
 .zip-phone-container{
     display:flex;
 }
