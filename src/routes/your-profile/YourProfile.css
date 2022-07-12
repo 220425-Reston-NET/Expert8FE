@@ -29,6 +29,13 @@
 .name{
     flex:1;
     padding: 2px;
+    
+}
+.name1{
+    flex:1;
+    padding: 2px;
+     
+
 }
 
 /* Parent element to address*/

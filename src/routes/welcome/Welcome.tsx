@@ -207,44 +207,44 @@ Our mission is to be a top provider of services that facilitates the matching of
                 <br></br>
                 <div className="gallery-cell">
                     <p>In 2019, just prior to the COVID-19 pandemic, 19.86% of adults experienced a mental illness, equivalent to nearly 50 million Americans.  ​</p>
-                    <p>@azulpepper</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>Suicidal ideation continues to increase among adults in the U.S. 4.58% of adults report having serious thoughts of suicide. The national rate of suicidal ideation among adults has increased every year since 2011-2012.​</p>
-                    <p>@Yrod17</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>A growing percentage of youth in the U.S. live with major depression. 15.08% of youth experienced a major depressive episode in the past year.​</p>
-                    <p>@kwue</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>Over 2.5 million youth in the U.S. have severe depression, and multiracial youth are at greatest risk. 10.6% of youth in the U.S. have severe major depression (depression that severely affects functioning). The rate of severe depression was highest among youth who identified as more than one race, at 14.5% (more than one in every seven multiracial youth).</p>
-                    <p>@Sadge</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>Over half of adults with a mental illness do not receive treatment, totaling over 27 million adults in the U.S. who are going untreated.</p>
-                    <p>@.shane.french05</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>The percentage of adults with a mental illness who report unmet need for treatment has increased every year since 2011. In 2019, 24.7% of adults with a mental illness report an unmet need for treatment. </p>
-                    <p>@.shane.french05</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>Over 60% of youth with major depression do not receive any mental health treatment. Even in states with the greatest access, nearly one in three are going without treatment. </p>
-                    <p>@.shane.french05</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>Both adults and youth in the U.S. continue to lack adequate insurance coverage. 11.1% of Americans with a mental illness are uninsured. There was a 0.3% increase from last year’s dataset, the second year in a row that this indicator increased since the passage of the Affordable Care Act (ACA). ​</p>
-                    <p>@.shane.french05</p>
+                    <br></br>
                 </div>
                 <div className="gallery-cell">
                     <p>8.1% of children had private insurance that did not cover mental health services, totaling 950,000 youth. </p>
-                    <p>@.shane.french05</p>
+                    <br></br>
                 </div>
 
                 <div className="gallery-cell">
                     <p>Rates of substance use are increasing for youth and adults, even prior to the COVID-19 pandemic. 7.74% of U.S. adults and 4.08% of youth had a substance use disorder in the past year. Substance use increased 0.07% for adults and 0.25% for youth over last year’s report. </p>
-                    <p>@.shane.french05</p>
+                    <br></br>
                 </div>
             </div>
         </div>
