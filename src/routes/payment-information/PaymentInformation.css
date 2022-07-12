@@ -5,6 +5,19 @@
     justify-content: center;
 }
 
+/* Title Header */
+.header{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 55px; 
+    text-align: center;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Parent element to the the billing names */
 .billing-name-container{
     

@@ -6,8 +6,6 @@
 }
 
 .create-account-container{
-    padding: 20px;
-    background-color: white;
 }
 
 /* Title Header */
@@ -20,25 +18,18 @@
     font-size: 55px; 
     text-align: center;
     font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif
-}
-
-
-.tell-us{
-    display:center;
-    margin-bottom: 90px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Parent element to name*/
 .name-container{
-    flex:1;
     display:flex;
-    padding:-10px;
 }   
 
 .name{
     flex:1;
     padding: 2px;
+    
 }
 
 /* Parent element to street, city*/

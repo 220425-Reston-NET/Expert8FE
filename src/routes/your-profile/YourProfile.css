@@ -10,13 +10,24 @@
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif;
     width: 800px;
+    height:30px;
 }
-
 
 /* Parent Container */
 .your-profile-page-container{
     display: flex;
     justify-content: center;
+}
+
+/* Parent Container to edit-btn */
+.top-btn{
+    display: inline-flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.edit-btn{
+    flex:1;
 }
 
 /* Parent element to name*/
@@ -84,5 +95,4 @@
 
 .btns{
     flex:1;
-    padding: 2px;   
 }

@@ -12,8 +12,9 @@ return (
     <div className="your-profile-container">
 
         <h1 className="header"><b>Your Profile</b></h1>
-        <br></br>
-        <br></br>
+        <div className="buttons-container top-btn">
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="edit-btn btn button-container btn-lg">Edit</button></div>        
+        </div>
         <div className="name-container">
             <div className="name">
             <label htmlFor=""  className="form-label label-container">First Name</label>
@@ -49,7 +50,7 @@ return (
 
         <div className="zip-phone-container">
             <div className="zip-phone">
-            <label htmlFor="" className="form-label label-container">Zip code</label>
+            <label htmlFor="" className="form-label label-container">Zip Code</label>
             <input type="zip" className="form-control zip-form" placeholder={userlist.zip} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
             <div className="zip-phone" >
@@ -59,8 +60,8 @@ return (
         </div>
         <br></br>
         <div className="buttons-container">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Save Changes</button></div>     
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Cancel Changes</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Save Changes</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Cancel Changes</button></div>     
         </div>
         
     </div>
