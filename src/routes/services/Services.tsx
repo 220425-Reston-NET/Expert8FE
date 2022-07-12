@@ -8,6 +8,27 @@ function Services() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const ChooseAnxiety = () =>
+  {
+
+
+    navigate('/choose-specialist')
+  }
+
+  const ChooseDepression = () =>
+  {
+
+    
+    navigate('/choose-specialist')
+  }
+
+  const ChooseRelationship = () =>
+  {
+
+    
+    navigate('/choose-specialist')
+  }
+
   return (
     <div>
       <h1>How can we help?</h1>

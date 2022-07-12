@@ -124,7 +124,7 @@ function CreateAccount() {
 
   const gotologin = () => {
     console.log("transfer works");
-    navigate(`/dashboard/${customer.firstName}`, {
+    navigate('/dashboard', {
       state: {
         ...customer
       },
@@ -137,10 +137,7 @@ function CreateAccount() {
       <div className="create-account-page-container">
         
         <form className="create-account-container" onSubmit={onSubmit}>
-          <h1 className="tell-us">
-            <b>Tell us about yourself</b>
-          </h1>
-
+          <h1 className="header"><b>Tell us about yourself</b></h1>
           <div className="name-container">
             <div className="name">
               <label htmlFor="" className="form-label label-container">
@@ -340,6 +337,20 @@ function CreateAccount() {
 
           <label htmlFor="password" className="form-label label-container">
             Password
+          </label>
+          <input
+            type="password"
+            className="form-control"
+            onChange={insertPassword}
+            aria-describedby=""
+          />
+          {isfailed && (
+            <span style={{ color: "red" }}>
+              Password must be 8 characters or more
+            </span>
+          )}
+          <label htmlFor="password" className="form-label label-container">
+            Re Enter Password
           </label>
           <input
             type="password"

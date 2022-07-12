@@ -1,0 +1,24 @@
+/* Page Container */
+.payment-confirmed-page-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.order-container{
+    flex:1;
+    font-size: 30px;
+    color: black;
+}
+
+.appoint-date-container{
+    flex:1;
+    font-size: 30px;
+    color: black;
+}
+
+.amount-paid-container{
+    flex:1;
+    font-size: 30px;
+    color: black;
+}

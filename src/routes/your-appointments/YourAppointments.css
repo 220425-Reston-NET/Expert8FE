@@ -1,0 +1,20 @@
+/* Parent Container */
+.your-appointments-page-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: cyan;
+    font-weight:bold;
+}
+
+.title-container{
+    flex:1;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.past-appointments-container{
+    flex:1;
+    padding:20px;
+    font-size: 30px;
+}
