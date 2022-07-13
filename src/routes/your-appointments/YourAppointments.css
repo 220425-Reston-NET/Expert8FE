@@ -27,7 +27,7 @@
 	-webkit-flex-flow: column; /* doesn't work without prefix */
     min-height: 10px; /* without min-height/height:0 flex:1 doesn't work */
 	overflow: auto; 
-	height: 32%;
+	height: 28%;
 	box-sizing: border-box;
 }
 

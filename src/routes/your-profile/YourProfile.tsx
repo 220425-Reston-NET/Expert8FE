@@ -12,9 +12,9 @@ return (
     <div className="your-profile-container">
 
         <h1 className="header"><b>Your Profile</b></h1>
-        <div className="buttons-container top-btn">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="edit-btn btn button-container btn-lg">Edit</button></div>        
-        </div>
+        <br></br>
+        <br></br>
+        <br></br>
         <div className="name-container">
             <div className="name">
             <label htmlFor=""  className="form-label label-container">First Name</label>
@@ -60,8 +60,8 @@ return (
         </div>
         <br></br>
         <div className="buttons-container">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Save Changes</button></div>     
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Cancel Changes</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Back</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Edit Profile</button></div>     
         </div>
 
         <iframe _ngcontent-eni-c5="" src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PgOrGbdy90WfHv61Ct0uAdk6UblAZzGG8tRntCRvQUUrJSZG1IkvxPqpK9ciMzmcpxG-Cn3mN" width="100%" height="400px"></iframe>
