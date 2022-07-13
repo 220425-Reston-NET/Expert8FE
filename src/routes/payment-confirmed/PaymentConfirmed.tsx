@@ -9,6 +9,8 @@ function PaymentConfirmed() {
         <div className="payment-information-container">
 
         <h1 className="header"><b>Payment Confirmed</b></h1>
+        <br></br>
+        <br></br>
             
             <div className="order-container">
             <p>Your order number is:</p>

@@ -12,53 +12,56 @@ return (
     <div className="your-profile-container">
 
         <h1 className="header"><b>Your Profile</b></h1>
-        
+        <div className="buttons-container top-btn">
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="edit-btn btn button-container btn-lg">Edit</button></div>        
+        </div>
         <div className="name-container">
-            <div className="name" style={{marginRight: 180}}>
+            <div className="name">
             <label htmlFor=""  className="form-label label-container">First Name</label>
             <input type="name" className="form-control" placeholder={userlist.firstName} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
-            <div className="name1" style={{marginLeft: 180}}>
+            <div className="name1">
             <label htmlFor="" className="form-label label-container">Last Name</label>
             <input type="name" className="form-control" placeholder={userlist.lastName} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div>   
 
         <div className="address-container">
-            <div className="address" style={{marginRight: 180}}>
-            <label htmlFor="" className="form-label label-container">Email Adress</label>
+            <div className="address">
+            <label htmlFor="" className="form-label label-container">Email Address</label>
             <input type="address" className="form-control" placeholder={userlist.email} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
-            <div className="address" style={{marginLeft: 180}}>
-            <label htmlFor="" className="form-label label-container">Address</label>
+            <div className="address">
+            <label htmlFor="" className="form-label label-container">Street Address</label>
             <input type="address" className="form-control" placeholder={userlist.address} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div> 
 
         <div className="city-state-container">
-            <div className="city-state" style={{marginRight: 180}}>
+            <div className="city-state">
             <label htmlFor="" className="form-label label-container">City</label>
-            <input type="name" className="form-control" placeholder={userlist.city} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <input type="city" className="form-control city-fprm" placeholder={userlist.city} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
-            <div className="city-state" style={{marginLeft: 180}}>
+            <div className="city-state">
             <label htmlFor="" className="form-label label-container">State</label>
-            <input type="name" className="form-control" placeholder={userlist.state} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <input type="state" className="form-control state-form" placeholder={userlist.state} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div> 
 
         <div className="zip-phone-container">
-            <div className="zip-phone" style={{marginRight: 180}}>
-            <label htmlFor="" className="form-label label-container">Zip code</label>
-            <input type="name" className="form-control" placeholder={userlist.zip} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <div className="zip-phone">
+            <label htmlFor="" className="form-label label-container">Zip Code</label>
+            <input type="zip" className="form-control zip-form" placeholder={userlist.zip} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
-            <div className="zip-phone" style={{marginLeft: 180}}>
+            <div className="zip-phone" >
             <label htmlFor="" className="form-label label-container">Phone  </label>
-            <input type="name" className="form-control" placeholder={userlist.phone} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <input type="phone" className="form-control phone-form" placeholder={userlist.phone} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div>
+        <br></br>
         <div className="buttons-container">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Save Changes</button></div>     
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Cancel Changes</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Save Changes</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Cancel Changes</button></div>     
         </div>
         
     </div>

@@ -2,6 +2,10 @@
 .create-account-page-container{
     display: flex;
     justify-content: center;
+    /* background-image: url('https://i.imgur.com/zzX0P7b.png'); */
+}
+
+.create-account-container{
 }
 
 /* Title Header */
@@ -14,25 +18,18 @@
     font-size: 55px; 
     text-align: center;
     font-style: italic;
-    font-family:Georgia, 'Times New Roman', Times, serif
-}
-
-
-.tell-us{
-    display:center;
-    margin-bottom: 90px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Parent element to name*/
 .name-container{
-    flex:1;
     display:flex;
-    padding:-10px;
 }   
 
 .name{
     flex:1;
     padding: 2px;
+    
 }
 
 /* Parent element to street, city*/

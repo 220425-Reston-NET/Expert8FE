@@ -11,10 +11,26 @@
     flex:1;
     padding: 20px;
     font-size: 30px;
+    height: 70px;
 }
 
 .past-appointments-container{
     flex:1;
     padding:20px;
     font-size: 30px;
+    height: 70px;
+}
+
+/* Parent Container to table */
+.scroll-table{
+    flex-flow: column;
+	-webkit-flex-flow: column; /* doesn't work without prefix */
+    min-height: 10px; /* without min-height/height:0 flex:1 doesn't work */
+	overflow: auto; 
+	height: 32%;
+	box-sizing: border-box;
+}
+
+.table{
+    flex:1;
 }

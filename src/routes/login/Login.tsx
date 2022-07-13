@@ -84,20 +84,14 @@ function Login() {
     }
     //end of onSubmit
 
-
-
-    
-
     return (
         <div className='login-container'>
             <form className='form-container' onSubmit={onSubmit}>
             <h1  className='welcome-container'>Welcome</h1>
             <div className="blueBar"></div>
             <br></br>
-            <br></br>
-            <br></br>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label label-container">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label label-container">Email Address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" onChange={Getuseremail} aria-describedby="emailHelp"/>
                 </div>
                 <div className="mb-3">
