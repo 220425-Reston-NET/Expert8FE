@@ -31,8 +31,8 @@ return (
             <label htmlFor="" className="form-label label-container">Email Address</label>
             <input type="address" className="form-control" placeholder={userlist.email} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
-            <div className="address" style={{marginLeft: 180}}>
-            <label htmlFor="" className="form-label label-container">Mailing Address</label>
+            <div className="address">
+            <label htmlFor="" className="form-label label-container">Street Address</label>
             <input type="address" className="form-control" placeholder={userlist.address} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div> 

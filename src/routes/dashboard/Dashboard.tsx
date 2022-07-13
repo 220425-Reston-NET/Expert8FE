@@ -5,6 +5,7 @@ import { Patient } from '../../models/Patient';
 
 import CreateAccount from '../create-account/CreateAccount';
 import { useSelector } from 'react-redux';
+import { ALL } from 'dns';
 
 
 
@@ -50,9 +51,9 @@ function Dashboard() {
   
 
   return (
-      <div className='buttons-container'>
-        <h1 className='header-container'>Welcome { userlist.firstName }</h1>
     <div  className='dashboard-layout'>
+    <h1 className='header-container'>Welcome { userlist.firstName}</h1>
+      <div className='buttons-container'>
                 <button onClick={goToAppointments} type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
                 <button onClick={goToChats}type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>
                 <button onClick={goToProfile}type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Your Profile</button>
