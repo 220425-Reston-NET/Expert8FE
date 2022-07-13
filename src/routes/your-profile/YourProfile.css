@@ -10,8 +10,8 @@
     font-style: italic;
     font-family:Georgia, 'Times New Roman', Times, serif;
     width: 800px;
+    height:30px;
 }
-
 
 /* Parent Container */
 .your-profile-page-container{
@@ -19,11 +19,22 @@
     justify-content: center;
 }
 
+/* Parent Container to edit-btn */
+.top-btn{
+    display: inline-flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.edit-btn{
+    flex:1;
+}
+
 /* Parent element to name*/
 .name-container{
     flex:1;
     display:flex;
-    padding: 20px;
+    padding: px;
 }   
 
 .name{
@@ -72,6 +83,11 @@
     padding: 2px;   
 }
 
+.phone-form{
+    width: 250px;
+    margin: auto;   
+}
+
 /* Parent Element of buttons */
 .buttons-container{
     display:flex;
@@ -79,5 +95,4 @@
 
 .btns{
     flex:1;
-    padding: 2px;   
 }
