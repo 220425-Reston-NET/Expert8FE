@@ -7,7 +7,7 @@ function ChooseSpecialist() {
     const navigate = useNavigate();
 
     const goToDashboard = () => {
-        navigate('/dashboard');
+        navigate('/services');
     };
 
     return (

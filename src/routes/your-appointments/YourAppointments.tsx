@@ -7,6 +7,13 @@ function YourAppointments() {
 
   const userlist = useSelector((state : any) => state.counter.value)
 
+  const navigate = useNavigate();
+
+  const goToDashboard = () => {
+    navigate('/dashboard');
+};
+
+
   return (
     <div className="your-appointments-page-container">
         <div className="your-appointmnet-container">
@@ -38,9 +45,11 @@ function YourAppointments() {
                   <td>{userlist.services[0].serviceName}</td>
                   <td>{userlist.services[0].specialists[0].wayOfMeeting[0].meetingServices}</td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -52,6 +61,7 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
@@ -59,9 +69,11 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -95,9 +107,11 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -109,9 +123,11 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -123,12 +139,13 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>                           
               </tbody>
             </table>
           </div>
           <div className="buttons-container">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Back</button></div>        
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} onClick={goToDashboard} type="submit" className="btn button-container btn-lg">Back to Dashboard</button></div>        
         </div>   
         </div>              
     </div>

@@ -5,6 +5,12 @@ import './YourProfile.css'
 
 function YourProfile() {
 
+
+    const navigate = useNavigate();
+
+    const goToDashboard = () => {
+      navigate('/dashboard');
+    }
     const userlist = useSelector((state : any) => state.counter.value)
 
 return (
@@ -60,7 +66,7 @@ return (
         </div>
         <br></br>
         <div className="buttons-container">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Back</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" onClick={goToDashboard} className="btn button-container btn-lg">Back</button></div>     
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Edit Profile</button></div>     
         </div>
 
