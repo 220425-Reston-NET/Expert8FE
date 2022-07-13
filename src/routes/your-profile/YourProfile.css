@@ -19,22 +19,11 @@
     justify-content: center;
 }
 
-/* Parent Container to edit-btn */
-.top-btn{
-    display: inline-flex;
-    justify-content: center;
-    height: 120px;
-}
-
-.edit-btn{
-    flex:1;
-}
 
 /* Parent element to name*/
 .name-container{
     flex:1;
     display:flex;
-    padding: px;
 }   
 
 .name{
@@ -94,5 +83,5 @@
 }
 
 .btns{
-    flex:1;
+    flex: 1;
 }

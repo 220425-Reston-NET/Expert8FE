@@ -14,6 +14,7 @@ return (
         <h1 className="header"><b>Payment Information</b></h1>
         <br></br>
         <br></br>
+        <br></br>
         <div className="name-container billing-name-container">
             <div className="name">
             <label htmlFor="" className="form-label label-container">First Name</label>
