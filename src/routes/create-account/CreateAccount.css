@@ -2,21 +2,34 @@
 .create-account-page-container{
     display: flex;
     justify-content: center;
+    /* background-image: url('https://i.imgur.com/zzX0P7b.png'); */
 }
 
-.tell-us{
-    display:center;
-    margin-bottom: 90px;
+.create-account-container{
 }
+
+/* Title Header */
+.header{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 55px; 
+    text-align: center;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Parent element to name*/
 .name-container{
-    flex:1;
     display:flex;
 }   
 
 .name{
     flex:1;
     padding: 2px;
+    
 }
 
 /* Parent element to street, city*/
@@ -32,10 +45,12 @@
 .address-container-b{
     display:flex;
 }
+
 .state-zip{
     flex:1;
     padding: 25px;
 }
+
 .success{
     flex:1;
     padding: 2px;   

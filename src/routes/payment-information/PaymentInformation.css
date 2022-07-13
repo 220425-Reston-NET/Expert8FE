@@ -1,0 +1,80 @@
+/* Parent Container */
+.payment-information-page-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Title Header */
+.header{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 55px; 
+    text-align: center;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Parent element to the the billing names */
+.billing-name-container{
+    
+}
+
+/* Parent element to address-city*/
+.address-city-container{
+    display: flex;
+    justify-content: center;
+}
+
+.address-city{
+    flex:1;
+    padding: 2px;
+}
+
+/* Parent element of state-zip */
+.state-zip-container{
+    display: flex;
+    justify-content: center;
+}
+
+.state-zip{
+    flex:1;
+    padding: 2px;
+}
+
+.state-form{
+    width: 150px;
+    margin: auto;    
+}
+
+.zip-form{
+    width: 150px;
+    margin: auto;   
+}
+
+.address-form{
+   /*  margin-left: 17px; */
+    /* margin-left: 17px; */
+}
+
+/* Parent element to card-ccv*/
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-ccv{
+    flex:1;
+    padding: px;
+}
+
+.ccv-form{
+    width: 100px;
+    margin: auto;
+}
+

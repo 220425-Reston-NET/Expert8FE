@@ -3,11 +3,16 @@ import { useNavigate, Link } from "react-router-dom";
 import "./CreateAccount.css";
 import { Patient } from "../../models/Patient";
 import "../dashboard/Dashboard";
+import { useDispatch } from "react-redux";
+import { addUser } from "../../store/counter";
 
 function CreateAccount() {
+
+  const dispatch = useDispatch();
   const [customer, setcustomer] = useState({} as Patient);
   const [ishidden, sethidden] = useState(false);
   const [isfailed, setfailed] = useState(false);
+  // const { firsd } = useSelector((state) => state.counter);
 
   function insertFirstName(e: any) {
     customer.firstName = e.target.value;
@@ -103,6 +108,7 @@ function CreateAccount() {
 
           setcustomer(data);
           sethidden(true);
+          dispatch(addUser(data));
           console.log(data);
 
           gotologin();
@@ -118,9 +124,9 @@ function CreateAccount() {
 
   const gotologin = () => {
     console.log("transfer works");
-    navigate(`/dashboard/${customer.firstName}`, {
+    navigate('/dashboard', {
       state: {
-        firstName: "hello",
+        ...customer
       },
     });
   };
@@ -131,10 +137,10 @@ function CreateAccount() {
       <div className="create-account-page-container">
         
         <form className="create-account-container" onSubmit={onSubmit}>
-          <h1 className="tell-us">
-            <b>Tell us about yourself</b>
-          </h1>
-
+          <h1 className="header"><b>Tell us about yourself</b></h1>
+          <br></br>
+          <br></br>
+          
           <div className="name-container">
             <div className="name">
               <label htmlFor="" className="form-label label-container">
@@ -173,7 +179,7 @@ function CreateAccount() {
           </div>
 
           <label htmlFor="" className="form-label label-container">
-            Email address
+            Email Address
           </label>
           <input
             type=""
@@ -314,7 +320,7 @@ function CreateAccount() {
             </div>
             <div className="state-zip">
               <label htmlFor="" className="form-label label-container">
-                Zipcode
+                Zip Code
               </label>
               <input
                 type="number"
@@ -334,6 +340,20 @@ function CreateAccount() {
 
           <label htmlFor="password" className="form-label label-container">
             Password
+          </label>
+          <input
+            type="password"
+            className="form-control"
+            onChange={insertPassword}
+            aria-describedby=""
+          />
+          {isfailed && (
+            <span style={{ color: "red" }}>
+              Password must be 8 characters or more
+            </span>
+          )}
+          <label htmlFor="password" className="form-label label-container">
+            Re-enter Password
           </label>
           <input
             type="password"

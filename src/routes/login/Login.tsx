@@ -3,10 +3,15 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
 import {Patient} from '../../models/Patient'
+import { useDispatch } from 'react-redux';
+import { addUser } from '../../store/counter';
 
 function Login() {
 
+
+  const dispatch = useDispatch();
     const navigate = useNavigate();
+    
 
     const[validation, setvalidation] = useState({} as Patient)
     const [isfailed, setfailed] = useState(false);
@@ -24,9 +29,7 @@ function Login() {
     const goToCreateAccount = () => {
         navigate('/create-account');
     };
-    const goToDashboard = () => {
-        navigate('/dashboard');
-    };
+    
 
     async function onSubmit(e: any) {
         e.preventDefault();
@@ -35,7 +38,8 @@ function Login() {
           new URLSearchParams({
             email: validation.email,
             password: validation.password
-          })
+          }),
+    
         
       )
         .then(response => 
@@ -60,8 +64,13 @@ function Login() {
               setfailed((prev) => false);
               console.log(data);
               setvalidation(data);
+              dispatch(addUser(data));
               
-              goToDashboard();
+              navigate('/dashboard', {
+                state: {
+                  ...data
+                },
+              });
     
             
           
@@ -75,20 +84,14 @@ function Login() {
     }
     //end of onSubmit
 
-
-
-    
-
     return (
         <div className='login-container'>
             <form className='form-container' onSubmit={onSubmit}>
             <h1  className='welcome-container'>Welcome</h1>
             <div className="blueBar"></div>
             <br></br>
-            <br></br>
-            <br></br>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label label-container">Email address</label>
+                    <label htmlFor="exampleInputEmail1" className="form-label label-container">Email Address</label>
                     <input type="email" className="form-control" id="exampleInputEmail1" onChange={Getuseremail} aria-describedby="emailHelp"/>
                 </div>
                 <div className="mb-3">

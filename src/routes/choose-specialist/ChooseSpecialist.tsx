@@ -1,7 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './ChooseSpecialist.css'
 
 function ChooseSpecialist() {
+
+    const navigate = useNavigate();
+
+    const goToDashboard = () => {
+        navigate('/services');
+    };
+
     return (
         <div className='comp-container'>
             <div className='specialist-container'>
@@ -28,6 +36,9 @@ function ChooseSpecialist() {
                         <label className="form-check-label" htmlFor="flexCheckDefault">
                             ---------------need img and description------------------
                         </label>
+                    </div>
+                    <div>
+                    <button type="submit"  onClick={goToDashboard} className="btn button-container btn-lg">Go Back</button>
                     </div>
                 </div>
             </div>

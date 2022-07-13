@@ -8,11 +8,17 @@ import Login from './routes/login/Login';
 import CreateAccount from './routes/create-account/CreateAccount';
 import Dashboard from './routes/dashboard/Dashboard';
 import Services from './routes/services/Services';
+import YourProfile from './routes/your-profile/YourProfile';
+import PaymentInformation from './routes/payment-information/PaymentInformation';
 import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
 import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
+import Chats from './routes/chats/Chats';
+import PaymentConfirmed from './routes/payment-confirmed/PaymentConfirmed';
+import YourAppointments from './routes/your-appointments/YourAppointments';
+import Scheduler from './routes/calender/Scheduler';
 
-function App() {
+function App() : JSX.Element {
 
   
 
@@ -23,11 +29,19 @@ function App() {
       <Route path='/' element={<Welcome/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/create-account' element={<CreateAccount/>}/>
-      <Route path='/dashboard/:userId' element={<Dashboard />}/>
+      <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/services' element={<Services/>}/>
+      <Route path='/your-profile' element={<YourProfile/>}/>
       <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
+      <Route path='/chats' element={<Chats/>}/>
+      <Route path='/payment-information' element={<PaymentInformation/>}/>
+      <Route path='/payment-confirmed' element={<PaymentConfirmed/>}/>
+      <Route path='/your-appointments' element={<YourAppointments/>}/>
+      <Route path="/Scheduler" element={<Scheduler />} />
     </Routes>
     </>
+
+    
   );
 }
 
