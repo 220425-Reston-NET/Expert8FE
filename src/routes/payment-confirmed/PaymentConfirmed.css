@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+.order-text{
+    display: flex;
+    justify-content: center;
+}
+
 .order-container{
     flex:1;
     font-size: 30px;
@@ -21,4 +26,13 @@
     flex:1;
     font-size: 30px;
     color: black;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btns{
+    flex: 1;
 }

@@ -30,6 +30,7 @@ function YourAppointments() {
                   <th scope="col">Time</th>
                 </tr>
               </thead>
+
               <tbody>
                 <tr>
                   <th scope="row">1</th>
@@ -86,6 +87,7 @@ function YourAppointments() {
                   <th scope="col">Time</th>
                 </tr>
               </thead>
+              
               <tbody>
                 <tr>
                   <th scope="row">1</th>
@@ -125,8 +127,12 @@ function YourAppointments() {
               </tbody>
             </table>
           </div>
-        </div>
+          <div className="buttons-container">
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Back</button></div>        
+        </div>   
+        </div>              
     </div>
+    
   )
 }
 export default YourAppointments
