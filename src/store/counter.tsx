@@ -20,10 +20,22 @@ export const counterSlice = createSlice({
             {
                 sid : 0,
                 serviceName : '',
-                prices : [
+                specialists : [
                     {
-                        prID : 0,
-                        servicePrice : 0,
+                        ssid : 0,
+                        specialistName : '',
+                        wayOfMeeting : [
+                            {
+                                wID : 0,
+                                meetingServices : '',
+                                prices : [
+                                    {
+                                        prID : 0,
+                                        servicePrice : 0
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }

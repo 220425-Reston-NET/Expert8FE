@@ -38,6 +38,8 @@ function App() : JSX.Element {
       <Route path='/your-appointments' element={<YourAppointments/>}/>
     </Routes>
     </>
+
+    
   );
 }
 
