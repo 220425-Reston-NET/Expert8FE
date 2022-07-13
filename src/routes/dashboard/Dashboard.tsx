@@ -12,25 +12,31 @@ function Dashboard() {
 
   const userlist = useSelector((state : any) => state.counter.value)
 
-  let testing1 = '';
+  const [ayy, setyy] = useState([userlist])
 
-  function testing (test : any) {
-      testing1 = userlist.services.serviceName
-  }
+  let testing1 = ayy.map((ayyy) => (ayyy.services[0].specialists[0].wayOfMeeting[0].meetingServices))
+
+ 
 
   
   
 
   const navigate = useNavigate();
-
   
-    
+  
+  
     const goToServices = () => {
         navigate('/services');
     };
     const goToProfile = () => {
         navigate('/your-profile')
     }
+    const goToChats = () => {
+      navigate('/chats')
+  }
+  const goToAppointments = () => {
+    navigate('/your-appointments')
+}
 
     
     const test = useParams();
@@ -47,8 +53,8 @@ function Dashboard() {
       <div className='buttons-container'>
         <h1 className='header-container'>Welcome { userlist.firstName }</h1>
     <div  className='dashboard-layout'>
-                <button onClick={goToServices} type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
-                <button onClick={goToServices}type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>
+                <button onClick={goToAppointments} type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}>Your Appointments</button>
+                <button onClick={goToChats}type="button" className="btn btn-outline-success btn-lg" style={{margin: 'auto'}}>Your Chats</button>
                 <button onClick={goToProfile}type="button" className="btn btn-outline-warning btn-lg" style={{margin: 'auto'}}>Your Profile</button>
                 <button onClick={goToServices} type="button" className="btn btn-outline-info btn-lg" style={{margin: 'auto'}}>Schedule Appointment</button>
             </div>

@@ -20,7 +20,7 @@ return (
             </div>
             <div className="name1" style={{marginLeft: 180}}>
             <label htmlFor="" className="form-label label-container">Last Name</label>
-            <input type="name" className="form-control" placeholder={userlist.lastName} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
+            <input type="name"  className="form-control" placeholder={userlist.lastName} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div>   
 
@@ -30,7 +30,7 @@ return (
             <input type="address" className="form-control" placeholder={userlist.email} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
             <div className="address" style={{marginLeft: 180}}>
-            <label htmlFor="" className="form-label label-container">Address</label>
+            <label htmlFor="" className="form-label label-container">Mailing Address</label>
             <input type="address" className="form-control" placeholder={userlist.address} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div> 
@@ -52,7 +52,7 @@ return (
             <input type="name" className="form-control" placeholder={userlist.zip} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
             <div className="zip-phone" style={{marginLeft: 180}}>
-            <label htmlFor="" className="form-label label-container">Phone  </label>
+            <label htmlFor="" className="form-label label-container">Phone</label>
             <input type="name" className="form-control" placeholder={userlist.phone} disabled id="" /* onChange={}  */ aria-describedby="nameHelp"/>
             </div>
         </div>
@@ -60,6 +60,8 @@ return (
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Save Changes</button></div>     
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Cancel Changes</button></div>     
         </div>
+
+        <iframe _ngcontent-eni-c5="" src="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PgOrGbdy90WfHv61Ct0uAdk6UblAZzGG8tRntCRvQUUrJSZG1IkvxPqpK9ciMzmcpxG-Cn3mN" width="100%" height="400px"></iframe>
         
     </div>
     </div>
