@@ -1,8 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Chats.css'
 
 function Chats() {
+
+    const navigate = useNavigate();
+
+    const goToDashboard = () => {
+        navigate('/dashboard');
+    };
+
     return (
+        <div>
+            <button style={{marginLeft: 20}} type="submit"  onClick={goToDashboard} className="btn button-container btn-lg">Go Back</button>
         <div className='chats-container'>
             <div className='column-container'>
                 Your Chats
@@ -20,6 +30,7 @@ function Chats() {
                     </ul>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

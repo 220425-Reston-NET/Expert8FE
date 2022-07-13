@@ -42,9 +42,13 @@ function Services() {
     
     navigate('/choose-specialist')
   }
+  const goToDashboard = () => {
+      navigate('/dashboard');
+  };
 
   return (
     <div>
+      <button style={{marginLeft: 20}} type="submit"  onClick={goToDashboard} className="btn button-container btn-lg">Go Back</button>
       <h1>How can we help?</h1>
       <h1>How are you feeling?</h1>
       <div className='services-container'>
