@@ -4,7 +4,10 @@ import './PaymentInformation.css'
 
 function PaymentInformation() {
 
-
+    const navigate = useNavigate()
+    
+    const gotoConfirm = () => {
+    navigate('/payment-confirmed')}
 
 
 return (
@@ -61,7 +64,7 @@ return (
         <br></br>
         <div className="buttons-container">
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Pay with Paypal</button></div>     
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Confirm Payment</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" onClick={gotoConfirm} className="btns btn button-container btn-lg">Confirm Payment</button></div>     
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Cancel</button></div>     
         </div>    
 
