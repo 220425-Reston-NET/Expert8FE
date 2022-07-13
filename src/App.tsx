@@ -13,12 +13,9 @@ import PaymentInformation from './routes/payment-information/PaymentInformation'
 import { Patient } from './models/Patient';
 import { useSelector } from 'react-redux';
 import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
-<<<<<<< HEAD
 import Chats from './routes/chats/Chats';
-=======
 import PaymentConfirmed from './routes/payment-confirmed/PaymentConfirmed';
 import YourAppointments from './routes/your-appointments/YourAppointments';
->>>>>>> 3493176f4f1de7c891229525e20c75751832260d
 
 function App() : JSX.Element {
 
@@ -35,13 +32,10 @@ function App() : JSX.Element {
       <Route path='/services' element={<Services/>}/>
       <Route path='/your-profile' element={<YourProfile/>}/>
       <Route path='/choose-specialist' element={<ChooseSpecialist/>}/>
-<<<<<<< HEAD
       <Route path='/chats' element={<Chats/>}/>
-=======
       <Route path='/payment-information' element={<PaymentInformation/>}/>
       <Route path='/payment-confirmed' element={<PaymentConfirmed/>}/>
       <Route path='/your-appointments' element={<YourAppointments/>}/>
->>>>>>> 3493176f4f1de7c891229525e20c75751832260d
     </Routes>
     </>
   );
