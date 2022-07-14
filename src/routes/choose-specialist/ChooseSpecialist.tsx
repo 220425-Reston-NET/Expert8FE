@@ -40,21 +40,21 @@ function ChooseSpecialist() {
     return (
         <div className='comp-container'>
             <div className='specialist-container'>
+
                 <p className='p-container'>Which specialist is right for you?</p>
+
                 <div className='row-one-cont'>
                     <div className="form-check">
                         <input className="form-check-input" type="radio" value="" id="flexCheckDefault" onClick={toggledelilah} />
                         <label className="form-check-label" htmlFor="flexCheckDefault">
                         <a href="https://images.squarespace-cdn.com/content/v1/54c6eb0ce4b0f6cdd67c1196/1642223720668-I2XL35T6SMPTDZPOTRFJ/DCP_0085"><img style={{ width: 300 }} src="https://images.squarespace-cdn.com/content/v1/54c6eb0ce4b0f6cdd67c1196/1642223720668-I2XL35T6SMPTDZPOTRFJ/DCP_0085.jpg" title="source: imgur.com" /></a>
-                        <h3 className='H3Container1'>Delilah Solace
-                        
-                        </h3>
-                        <div className='H3Container'>Master's degree in Psycology</div>
+                        <h3 className='specialist-name-one'>Delilah Solace</h3>
+                        <div className='specialist-degree-one'>Master's degree in Psycology</div>
 
                         {
                             ishidden && 
-                            <div>
-                            <h6>Please choose the way you would like to meet</h6>
+                        <div>
+                            <div className="form-header"><h6><b>Please choose the way you would like to meet:</b></h6></div>
                             <div className="form-check form-check-inline" style={{marginTop: '0rem'}}>
                             <input className="form-check-input" type="radio" name="inlineRadioOptions1" onClick={toggle1meetzoom} id="inlineRadio1" value="option1" />
                             <label className="form-check-label" htmlFor="inlineRadio1">Zoom</label>
@@ -87,10 +87,8 @@ function ChooseSpecialist() {
                         <input className="form-check-input" type="radio" value="" id="flexCheckDefault" />
                         <label className="form-check-label" htmlFor="flexCheckDefault">
                         <a href="https://nylprofessionals.newyorklife.com/Production/Producer/Image/Standard/Agent_0208708_Image_24620"><img style={{ width: 300 }} src="https://nylprofessionals.newyorklife.com/Production/Producer/Image/Standard/Agent_0208708_Image_24620.jpg" title="source: imgur.com" /></a>
-                        <h3 className='H3Container1'>Emerson Kora
-                        
-                        </h3>
-                        <div className='H3Container'>Master's degree in Psycology</div>
+                        <h3 className='specialist-name-two '>Emerson Kora</h3>
+                        <div className='specialist-degree-two '>Master's degree in Psycology</div>
                         </label>
                     </div>
                 </div>
@@ -99,10 +97,10 @@ function ChooseSpecialist() {
                         <input className="form-check-input" type="radio" value="" id="flexCheckDefault" />
                         <label className="form-check-label" htmlFor="flexCheckDefault">
                         <a href="https://www.faculty.uci.edu/get_image.cfm?faculty_id=5555"><img style={{ width: 300 }} src="https://www.faculty.uci.edu/get_image.cfm?faculty_id=5555" title="source: imgur.com" /></a>
-                        <h3 className='H3Container1'>Daniela Wright
+                        <h3 className='specialist-name-three '>Daniela Wright
                         
                         </h3>
-                        <div className='H3Container'>Master's degree in Psycology</div>
+                        <div className='specialist-degree-three'>Master's degree in Psycology</div>
                         </label>
                     </div>
                     <div>

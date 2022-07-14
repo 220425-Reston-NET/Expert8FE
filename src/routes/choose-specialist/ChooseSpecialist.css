@@ -22,8 +22,72 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.specialist-name-one {
+    flex:1;
+    margin-left: 360px;
+    margin-bottom: cm  ;
+    text-align: left;
+    position: relative; 
+    top: -220px;
+}
+
+.specialist-degree-one {
+    margin-left: 360px;
+    margin-top: cm;
+    text-align: left;
+    position: relative;
+    top: -230px;
+}
+
+.specialist-name-two {
+    flex:1;
+    margin-left: 360px;
+    margin-bottom: cm  ;
+    text-align: left;
+    position: relative; 
+    top: -220px;
+}
+
+.specialist-degree-two {
+    margin-left: 360px;
+    margin-top: cm;
+    text-align: left;
+    position: relative;
+    top: -230px;
+}
+
+.specialist-name-three {
+    flex:1;
+    margin-left: 360px;
+    margin-bottom: cm  ;
+    text-align: left;
+    position: relative; 
+    top: -205px;
+}
+
+.specialist-degree-three {
+    margin-left: 360px;
+    margin-top: cm;
+    text-align: left;
+    position: relative;
+    top: -220px;
+}
+
+.form-header{
+    text-align: left;
+    position: relative;
+}
+
+.form-check{
+    display: flex;
+    flex-direction: row;
+
+}
+
 .row-one-cont{
     order:2;
+    display:flex;
+    flex-direction: row;
 }
 
 .row-two-cont{
@@ -32,15 +96,4 @@
 
 .row-three-cont{
     order:4;
-}
-.H3Container {
-    margin-left: 360px;
-    margin-top: cm;
-    text-align: left;
-}
-
-.H3Container1 {
-    margin-left: 360px;
-    margin-bottom: cm  ;
-    text-align: left;
 }
