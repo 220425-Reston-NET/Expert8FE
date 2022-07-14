@@ -38,9 +38,11 @@ function YourAppointments() {
                   <td>{userlist.services[0].serviceName}</td>
                   <td>{userlist.services[0].specialists[0].wayOfMeeting[0].meetingServices}</td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -52,6 +54,7 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
@@ -59,9 +62,11 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -95,9 +100,11 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
@@ -109,6 +116,7 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
@@ -116,9 +124,11 @@ function YourAppointments() {
                   <td></td>
                   <td></td>
                   <td></td>
+                  <td></td>
                 </tr>     
                 <tr>
                   <th scope="row">5</th>
+                  <td></td>
                   <td></td>
                   <td></td>
                   <td></td>
