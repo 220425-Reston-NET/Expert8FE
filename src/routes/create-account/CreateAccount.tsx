@@ -120,7 +120,7 @@ function CreateAccount() {
   }
 
   const navigate = useNavigate();
-  
+
 
   const gotologin = () => {
     console.log("transfer works");
@@ -133,14 +133,14 @@ function CreateAccount() {
 
   return (
     <div>
-      
+
       <div className="create-account-page-container">
-        
+
         <form className="create-account-container" onSubmit={onSubmit}>
           <h1 className="header"><b>Tell us about yourself</b></h1>
           <br></br>
           <br></br>
-          
+
           <div className="name-container">
             <div className="name">
               <label htmlFor="" className="form-label label-container">
@@ -368,7 +368,7 @@ function CreateAccount() {
           )}
 
           <div style={{ textAlign: "center" }}>
-            
+
             <button
               style={{ marginBottom: 20 }}
               type="submit"
@@ -377,7 +377,7 @@ function CreateAccount() {
             >
               Submit
             </button>
-           
+
           </div>
         </form>
       </div>
