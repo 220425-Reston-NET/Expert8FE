@@ -16,6 +16,7 @@ import ChooseSpecialist from './routes/choose-specialist/ChooseSpecialist';
 import Chats from './routes/chats/Chats';
 import PaymentConfirmed from './routes/payment-confirmed/PaymentConfirmed';
 import YourAppointments from './routes/your-appointments/YourAppointments';
+import Scheduler from './routes/calender/Scheduler';
 
 function App() : JSX.Element {
 
@@ -36,6 +37,7 @@ function App() : JSX.Element {
       <Route path='/payment-information' element={<PaymentInformation/>}/>
       <Route path='/payment-confirmed' element={<PaymentConfirmed/>}/>
       <Route path='/your-appointments' element={<YourAppointments/>}/>
+      <Route path="/Scheduler" element={<Scheduler />} />
     </Routes>
     </>
 

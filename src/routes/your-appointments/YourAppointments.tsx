@@ -7,6 +7,13 @@ function YourAppointments() {
 
   const userlist = useSelector((state : any) => state.counter.value)
 
+  const navigate = useNavigate();
+
+  const goToDashboard = () => {
+    navigate('/dashboard');
+};
+
+
   return (
     <div className="your-appointments-page-container">
         <div className="your-appointmnet-container">
@@ -138,7 +145,8 @@ function YourAppointments() {
             </table>
           </div>
           <div className="buttons-container">
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btn button-container btn-lg">Back</button></div>        
+          
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} onClick={goToDashboard} type="submit" className="btn button-container btn-lg">Back to Dashboard</button></div>        
         </div>   
         </div>              
     </div>
