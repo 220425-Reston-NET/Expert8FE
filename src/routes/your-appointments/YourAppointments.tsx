@@ -145,6 +145,7 @@ function YourAppointments() {
             </table>
           </div>
           <div className="buttons-container">
+          
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} onClick={goToDashboard} type="submit" className="btn button-container btn-lg">Back to Dashboard</button></div>        
         </div>   
         </div>              

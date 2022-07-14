@@ -35,7 +35,7 @@ function Scheduler() {
       <div className='buttons-container'>
 
 
-      <button onClick={goToChooseSpecialist} type="button" className="btn btn-outline-primary btn-lg" style={{margin: 'auto'}}> Go Back</button>
+      <button onClick={goToChooseSpecialist} type="button" className="btn btn-outline-primary btn-lg haha1" style={{margin: 'auto'}}> Go Back</button>
       <ScheduleComponent rowAutoHeight= { true }  startHour='07:00' endHour='18:00' showWeekend= { false } eventClick={goToPaymentConfirmation} timeScale={ { enable: true, interval: 60, slotCount: 2}}>
         <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
       </ScheduleComponent>

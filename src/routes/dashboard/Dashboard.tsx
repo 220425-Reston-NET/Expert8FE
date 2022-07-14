@@ -15,7 +15,7 @@ function Dashboard() {
 
   const [ayy, setyy] = useState([userlist])
 
-  let testing1 = ayy.map((ayyy) => (ayyy.services[0].specialists[0].wayOfMeeting[0].meetingServices))
+
 
  
 

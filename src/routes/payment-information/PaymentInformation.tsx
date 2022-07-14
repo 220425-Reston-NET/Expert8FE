@@ -1,20 +1,75 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { addService } from '../../store/Add';
 import './PaymentInformation.css'
 
 function PaymentInformation() {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch();
+
+    const userlist = useSelector((state : any) => state.service.value)
+    
     
     const gotoConfirm = () => {
     navigate('/payment-confirmed')}
+
+    async function onSubmit(e: any) {
+        e.preventDefault();
+    
+        await fetch(
+          "http://expert8env-env.eba-q62pjcac.us-east-1.elasticbeanstalk.com/AddServices",
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              pID : userlist.pID,
+              mhsID: userlist.mhsID,
+              mhpID: userlist.mhpID,
+              ssID: userlist.ssID,
+              wID: userlist.wID
+
+            }),
+          }
+        )
+          .then((response) => {
+            if (response.status == 200) {
+              return response.json();
+            } else {
+              
+    
+              throw `error with status ${response.status}`;
+            }
+          })
+    
+          .then(
+            (data) => {
+              // change/ attached user to user id in db
+    
+              
+              
+
+              console.log(data);
+              gotoConfirm();
+    
+              
+            },
+            () => {
+              
+            }
+          );
+      }
 
 
 return (
     <div className="payment-information-page-container">
         <div className="payment-information-container">
 
-        <h1 className="header"><b>Payment Information</b></h1>
+        <h1 className="header"><b>Payment Information {userlist.pID}</b></h1>
         <br></br>
         <br></br>
         <br></br>
@@ -65,7 +120,7 @@ return (
         <br></br>
         <div className="buttons-container">
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Pay with Paypal</button></div>     
-            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" onClick={gotoConfirm} className="btns btn button-container btn-lg">Confirm Payment</button></div>     
+            <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" onClick={onSubmit} className="btns btn button-container btn-lg">Confirm Payment</button></div>     
             <div style={{textAlign: 'center'}}><button style={{marginBottom: 20}} type="submit" className="btns btn button-container btn-lg">Cancel</button></div>     
         </div>    
 

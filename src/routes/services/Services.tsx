@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { addService } from '../../store/Add';
+import { addService }  from '../../store/Add';
 import './Services.css'
 
 function Services() {
@@ -9,6 +9,7 @@ function Services() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const userlist = useSelector((state : any) => state.counter.value)
+
 
   const ChooseAnxiety = () =>
   {
