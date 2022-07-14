@@ -34,10 +34,10 @@ function Dashboard() {
     }
     const goToChats = () => {
       navigate('/chats')
-  }
-  const goToAppointments = () => {
-    navigate('/your-appointments')
-}
+    }
+    const goToAppointments = () => {
+      navigate('/your-appointments')
+    }
 
     
     const test = useParams();
